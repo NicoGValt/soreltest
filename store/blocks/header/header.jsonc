@@ -1,0 +1,96 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "title": "Header D+M",
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#preHeader": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "wrap-preHeader",
+      "fullWidth": true,
+      "sticky": true
+    },
+    "children": [
+      "slider-layout#preHeader"
+    ]
+  },
+  "slider-layout#preHeader": {
+    "props":{
+      "showPaginationDots":"never",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "blockClass":"PreHeader"
+    },
+    "children":[
+      "rich-text#preheader","rich-text#preheader","rich-text#preheader"
+    ]
+
+  },
+  "rich-text#preheader": {
+    "title": "Pre Header",
+    "props": {
+      "text": "CLICK & COLLECT / RETIRO",
+      "blockClass": "textPreheader",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "search-bar": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "blockClass": "autocompleteCustom",
+      "openAutocompleteOnFocus": true,
+      "maxWidth": 380,
+      "placeholder": ""
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "maxSuggestedProducts": 3,
+      "__unstableProductOriginVtex": true
+    }
+  },
+  "flex-layout.col#logo": {
+    "props": {
+      "blockClass":"logoSorel",
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#lyracons"
+    ]
+  },
+  "logo#lyracons": {
+    "props": {
+      "width": 84,
+      "height": 58,
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-sorel.svg"
+    }
+  }
+}

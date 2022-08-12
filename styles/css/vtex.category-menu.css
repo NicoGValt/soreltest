@@ -1,0 +1,124 @@
+@media only screen and (max-width: 768px) {
+  .itemContainer--department {
+    border-bottom: none;
+  }
+  .itemContainer--department:hover {
+    border-bottom: none;
+  }
+}
+
+.section--department {
+  padding: 0;
+  justify-content: flex-start;
+}
+
+.container {
+  display: block;
+}
+.itemContainer--category {
+  left: auto;
+}
+.departmentLink {
+  margin: 0;
+  border: none;
+  text-align: left;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.itemContainer--department {
+}
+.itemContainer--department::after {
+  content: "";
+  background-image: url("assets/chevron-down.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 11px;
+  height: 6px;
+  position: relative;
+  top: 1px;
+  margin-left: 3px;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .itemContainer--department {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .itemContainer--department::after {
+    content: "";
+    background-image: url("assets/chevron-down.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 11px;
+    height: 6px;
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
+  }
+  .itemContainer--category {
+    max-height: 50rem;
+    z-index: 10;
+  }
+}
+
+.departmentLink:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .departmentList {
+    height: auto;
+  }
+}
+
+.submenuItem {
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+.firstLevelList {
+  padding-inline-start: 0;
+}
+.firstLevelLink {
+  color: #989898;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.75px;
+  padding: 6px 0px;
+}
+.secondLevelLink {
+  color: #989898;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-transform: none;
+  padding: 7px 0px;
+  padding-left: 10px;
+}
+.firstLevelLink:hover,
+.secondLevelLink:hover {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 640px) {
+  .itemContainer--category {
+    display: block !important;
+    width: 38% !important;
+    top:10px !important;
+    max-height: none !important;
+    border-bottom: none !important;
+  }
+
+  .section--department {
+  }
+  .departmentLink:hover {
+    border: none;
+  }
+}

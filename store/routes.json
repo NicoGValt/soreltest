@@ -1,0 +1,20 @@
+{
+  "store.custom#about": {
+    "path": "/about-us"
+  },
+  "store.custom#nmision": {
+    "path": "/nuestra-mision"
+  },
+  "store.custom#nvision": {
+    "path": "/nuestra-vision"
+  },
+  "store.custom#contactPage": {
+    "path": "/contacto"
+  },
+  "store.custom#locales": {
+    "path": "/locales"
+  },
+  "store.custom#tyc": {
+    "path": "/bases-y-condiciones"
+  }
+}

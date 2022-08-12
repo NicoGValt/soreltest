@@ -1,0 +1,526 @@
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  padding: 0;
+  -webkit-box-pack: start;
+  justify-content: start;
+}
+
+.brandName,
+.productBrand {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .brandName,
+  .productBrand {
+    display: block;
+  }
+}
+
+.container {
+}
+
+.imageContainer {
+}
+
+.image {
+  border-radius: 0;
+}
+@media only screen and (max-width: 768px) {
+  .imageNormal {
+    max-height: 300px !important;
+  }
+ 
+}
+.element {
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .element {
+    margin-bottom: 0px;
+  }
+}
+
+:global(.vtex-button__label) {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+:global(.vtex-button) {
+  max-width: 90%;
+  margin: 0 auto;
+  min-height: 1.5rem;
+}
+.priceContainer {
+  -webkit-box-align: start;
+  align-items: start;
+  padding: 0;
+}
+.containerNormal {
+  border-radius: 0;
+  border: 0;
+  background-color: #ffffff;
+  max-width: none !important;
+  padding: 0 2px;
+}
+.price_className--shelfSummaryPrice {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+  .price_className--shelfSummaryPrice {
+    flex-direction: column;
+  }
+}
+.price_sellingPriceContainer--shelfSummaryPrice,
+.price_listPriceContainer--shelfSummaryPrice {
+  padding: 0;
+  margin: 0;
+  line-height: 18px;
+  color: #ff5094;
+  font-weight: 400;
+  font-style: normal;
+}
+@media only screen and (max-width: 768px) {
+  .price_sellingPrice--shelfSummaryPrice {
+    padding: 0;
+  }
+}
+.currencyCode--shelfSummaryPrice,
+.currencyInteger--shelfSummaryPrice {
+  font-size: 18px;
+}
+.price_listPrice--shelfSummaryPrice {
+  color: #b5b5b5;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 1rem;
+  margin-right: 0.75rem;
+}
+.price_selling--shelfSummaryPrice {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 1rem;
+  color: black;
+}
+.price_listPrice--shelfSummaryPrice
+  :global(.vtex-product-summary-2-x-currencyCode--shelfSummaryPrice),
+.price_listPrice--shelfSummaryPrice
+  :global(.vtex-product-summary-2-x-currencyInteger--shelfSummaryPrice) {
+  font-size: 14px;
+}
+
+.mainImageHovered {
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.mainImageHovered:hover {
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.hoverImage {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+}
+.hoverImage:hover {
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.skuSelectorItemImageValue {
+  display: none;
+}
+.skuSelectorItem {
+  border-radius: 100%;
+  margin-right: 7px !important;
+  height: 24px !important;
+  width: 24px !important;
+  border: 2px solid lightgray;
+}
+.skuSelectorItem--selected {
+  border: 2px solid darkgray;
+}
+.skuSelectorItemImage--selectSkuPv {
+  height: 50px !important;
+  width: 50px !important;
+}
+.skuSelectorInternalBox {
+  border: none;
+}
+
+.currencyFraction--shelfSummaryPrice,
+.currencyDecimal--shelfSummaryPrice {
+  display: none;
+}
+
+/****** COLORES **********/
+.skuSelectorItem--estampado {
+  background-image: url("assets/estampado.png");
+  background-size: cover;
+}
+.skuSelectorItem--aero {
+  background-color: #336699;
+}
+.skuSelectorItem--amarillo {
+  background-color: #ffff4d;
+}
+.skuSelectorItem--amarillo-claro {
+  background-color: #ffff99;
+}
+.skuSelectorItem--arcilla {
+  background-color: #b59960;
+}
+.skuSelectorItem--arena {
+  background-color: #bf8040;
+}
+.skuSelectorItem--azul {
+  background-color: #0000ff;
+}
+.skuSelectorItem--azul-claro {
+  background-color: #1857fe;
+}
+.skuSelectorItem--azul-francia {
+  background-color: #0a26ef;
+}
+.skuSelectorItem--azul-grisaceo {
+  background-color: #536879;
+}
+.skuSelectorItem--azul-marino {
+  background-color: #25488e;
+}
+.skuSelectorItem--azul-matizado {
+  background-color: #668cff;
+}
+.skuSelectorItem--azul-medio {
+  background-color: #0001cb;
+}
+.skuSelectorItem--azul-melange {
+  background-color: #4b7db0;
+}
+.skuSelectorItem--azul-oscuro {
+  background-color: #001133;
+}
+.skuSelectorItem--beige {
+  background-color: #ffe6cc;
+}
+.skuSelectorItem--beige-melange {
+  background-color: #ffeedf;
+}
+.skuSelectorItem--blanco {
+  background-color: #ffffff;
+  border: 1px solid gray;
+}
+.skuSelectorItem--blanco-apto {
+  background-color: #f8f8f8;
+}
+.skuSelectorItem--bordeaux {
+  background-color: #4d0018;
+}
+
+.skuSelectorItem--bordo {
+  background-color: #800040;
+}
+.skuSelectorItem--bordo-claro {
+  background-color: #cc0044;
+}
+.skuSelectorItem--borravino {
+  background-color: #4d0028;
+}
+.skuSelectorItem--bronce {
+  background-color: #bc784b;
+}
+.skuSelectorItem--camel {
+  background-color: #be7327;
+}
+.skuSelectorItem--celeste {
+  background-color: #cce0ff;
+}
+.skuSelectorItem--celeste-claro {
+  background-color: #cce0ff;
+}
+.skuSelectorItem--celeste-grisaceo {
+  background-color: #cddcfe;
+}
+.skuSelectorItem--celeste-medio {
+  background-color: #99ccff;
+}
+.skuSelectorItem--celeste-melange {
+  background-color: #a4c5e4;
+}
+.skuSelectorItem--celeste-oscuro {
+  background-color: #001133;
+}
+.skuSelectorItem--cemento {
+  background-color: #857f73;
+}
+.skuSelectorItem--cereza {
+  background-color: #ae0455;
+}
+.skuSelectorItem--cobre {
+  background-color: #a33e0f;
+}
+.skuSelectorItem--cobre-pompeyano {
+  background-color: #ac491a;
+}
+.skuSelectorItem--coral {
+  background-color: #ff5050;
+}
+.skuSelectorItem--crudo {
+  background-color: #fff3e6;
+}
+.skuSelectorItem--dorado {
+  background-color: #e3bf55;
+}
+.skuSelectorItem--fucsia {
+  background-color: #e20351;
+}
+.skuSelectorItem--gris {
+  background-color: #808080;
+}
+.skuSelectorItem--gris-azulado {
+  background-color: #507e95;
+}
+.skuSelectorItem--gris-claro {
+  background-color: #e6e6e6;
+}
+.skuSelectorItem--gris-melange {
+  background-color: #bfbfbf;
+}
+.skuSelectorItem--gris-melange-claro {
+  background-color: #d9d9d9;
+}
+.skuSelectorItem--gris-melange-medio {
+  background-color: #d7d7d7;
+}
+.skuSelectorItem--gris-melange-oscuro {
+  background-color: #999999;
+}
+.skuSelectorItem--gris-oscuro {
+  background-color: #595959;
+}
+.skuSelectorItem--gris-perla {
+  background-color: #e8e8e8;
+}
+.skuSelectorItem--gris-topo {
+  background-color: #737373;
+}
+.skuSelectorItem--hielo {
+  background-color: #dbe6e6;
+}
+.skuSelectorItem--human {
+  background-color: #fae7d0;
+}
+.skuSelectorItem--khaki {
+  background-color: #ad9169;
+}
+.skuSelectorItem--lavanda {
+  background-color: #ccccfe;
+}
+.skuSelectorItem--lila {
+  background-color: #ddccff;
+}
+.skuSelectorItem--lima {
+  background-color: #ffffb3;
+}
+.skuSelectorItem--maiz {
+  background-color: #fec701;
+}
+.skuSelectorItem--manteca {
+  background-color: #ffffcc;
+}
+.skuSelectorItem--marfil {
+  background-color: #ffffe6;
+}
+.skuSelectorItem--marron {
+  background-color: #643204;
+}
+.skuSelectorItem--marron-claro {
+  background-color: #d2a679;
+}
+.skuSelectorItem--marron-melange {
+  background-color: #8f6356;
+}
+.skuSelectorItem--marron-oscuro {
+  background-color: #331a00;
+}
+.skuSelectorItem--morado {
+  background-color: #660022;
+}
+.skuSelectorItem--naranja {
+  background-color: #ff8000;
+}
+.skuSelectorItem--naranja-claro {
+  background-color: #ff944d;
+}
+.skuSelectorItem--naranja-oscuro {
+  background-color: #e84824;
+}
+.skuSelectorItem--negro {
+  background-color: #000000;
+}
+.skuSelectorItem--negro-grisaceo {
+  background-color: #313237;
+}
+.skuSelectorItem--neutro {
+  background-color: #f2f2f2;
+}
+.skuSelectorItem--niquel-mate {
+  background-color: #ced1c7;
+}
+.skuSelectorItem--nude {
+  background-color: #ffccb3;
+}
+.skuSelectorItem--peltre {
+  background-color: #534651;
+}
+.skuSelectorItem--petroleo {
+  background-color: #004466;
+}
+.skuSelectorItem--plata {
+  background-color: #eeeeee;
+}
+.skuSelectorItem--raw-wash {
+  background-color: #333;
+}
+.skuSelectorItem--rojo {
+  background-color: #ff0000;
+}
+.skuSelectorItem--rojo-fuerte {
+  background-color: #ff1a1a;
+}
+.skuSelectorItem--rojo-melange {
+  background-color: #ca2732;
+}
+.skuSelectorItem--rosa-claro {
+  background-color: #ffe6e6;
+}
+.skuSelectorItem--rosa-fuerte {
+  background-color: #e60073;
+}
+.skuSelectorItem--rosa-melange {
+  background-color: #ffb3b3;
+}
+.skuSelectorItem--rosa {
+  background-color: #ffc0cb;
+}
+.skuSelectorItem--rosa-oscuro {
+  background-color: #e60049;
+}
+.skuSelectorItem--rosa-viejo {
+  background-color: #fed2cd;
+}
+.skuSelectorItem--safari {
+  background-color: #666633;
+}
+.skuSelectorItem--salmon {
+  background-color: #ff6666;
+}
+.skuSelectorItem--tostado {
+  background-color: #b99579;
+}
+.skuSelectorItem--transparente {
+  background-color: #ffffff;
+}
+.skuSelectorItem--turquesa {
+  background-color: #006666;
+}
+.skuSelectorItem--vainilla {
+  background-color: #ffffc4;
+}
+.skuSelectorItem--varios {
+  background-color: #ffffff;
+}
+.skuSelectorItem--verde-agua {
+  background-color: #29ffe5;
+}
+.skuSelectorItem--verde-botella {
+  background-color: #009973;
+}
+.skuSelectorItem--verde-claro {
+  background-color: #b3ff99;
+}
+.skuSelectorItem--verde-malva {
+  background-color: #c8d6c2;
+}
+.skuSelectorItem--verde-menta {
+  background-color: #194d33;
+}
+.skuSelectorItem--verde-militar {
+  background-color: #333300;
+}
+.skuSelectorItem--verde-oliva {
+  background-color: #beca2b;
+}
+.skuSelectorItem--verde-oscuro {
+  background-color: #02311f;
+}
+.skuSelectorItem--verde-petroleo {
+  background-color: #00525e;
+}
+.skuSelectorItem--verde-seco {
+  background-color: #77b300;
+}
+.skuSelectorItem--violeta {
+  background-color: #5900b3;
+}
+.skuSelectorItem--vison {
+  background-color: #d9b18c;
+}
+.skuSelectorItem--mostaza {
+  background-color: #fec701;
+}
+.skuSelectorItem--verde {
+  background-color: #008000;
+}

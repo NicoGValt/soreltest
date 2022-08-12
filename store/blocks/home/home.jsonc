@@ -1,0 +1,466 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.phone"
+    ]
+  },
+  "store.home#blockPage": {
+    "parent": {
+      "header": "header#empty",
+      "footer": "footer#empty"
+    },
+    "blocks": [
+      "responsive-layout.desktop#blockPage"
+    ]
+  },
+  "header#empty": {
+    "blocks": [
+      "header-layout.desktop#empty",
+      "header-layout.mobile#empty"
+    ]
+  },
+  "header-layout.desktop#empty": {
+    "children": []
+  },
+  "header-layout.mobile#empty": {
+    "children": []
+  },
+  "footer#empty": {
+    "blocks": [
+      "footer-layout.desktop#empty",
+      "footer-layout.mobile#empty"
+    ]
+  },
+  "footer-layout.desktop#empty": {
+    "children": []
+  },
+  "footer-layout.mobile#empty": {
+    "children": []
+  },
+  "responsive-layout.desktop#blockPage": {
+    "title": "Desktop BlockPage",
+    "children": [
+      "list-context.image-list#blockPage"
+    ]
+  },
+  "list-context.image-list#blockPage": {
+    "title": "Block Page D+M",
+    "children": [
+      "slider-layout#blockPage-images"
+    ],
+    "props": {
+      "blockClass": "blockPage",
+      "images": [
+        {
+          "image": "assets/blockPage_desktop.jpg",
+          "mobileImage": "assets/blockPage_mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#blockPage-images": {
+    "props": {
+      "blockClass": "blockPage",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always"
+    }
+  },
+  "responsive-layout.desktop": {
+    "title": "Desktop",
+    "children": [
+      "list-context.image-list#mainSlider",
+      "flex-layout.row#firstLine-banners",
+      "flex-layout.row#secondLine-cate",
+      "flex-layout.row#secondLine-banners",
+      "image#example",
+      "info-card#descriptionShoes",
+      "rich-text#sliderTitle",
+      "list-context.product-list#moreShoes",
+      "rich-text#txt1",
+      "rich-text#txt2",
+      "flex-layout.row#texts"
+    ]
+  },
+  "responsive-layout.phone": {
+    "title": "Mobile",
+    "children": [
+      "list-context.image-list#mainSlider",
+      "flex-layout.row#firstLine-banners",
+      "flex-layout.row#secondLine-cate",
+      "slider-layout#shoesSlide"
+    ]
+  },
+  "list-context.image-list#mainSlider": {
+    "title": "02 - Slider Home D+M",
+    "children": [
+      "slider-layout#mainSlider-images"
+    ],
+    "props": {
+      "blockClass": "mainSlider",
+      "height": 961,
+      "images": [
+        {
+          "image": "assets/slide-sorel-01.jpg",
+          "mobileImage": "assets/slider-homeMobile.png"
+        },
+        {
+          "image": "assets/slide-sorel-01.jpg",
+          "mobileImage": "assets/slider-homeMobile.png"
+        },
+        {
+          "image": "assets/slide-sorel-01.jpg",
+          "mobileImage": "assets/slider-homeMobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#mainSlider-images": {
+    "props": {
+      "blockClass":"mainSlider",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always"
+    }
+  },
+  "flex-layout.row#firstLine-banners": {
+    "title": "04 - Banners Cate 1 D+M",
+    "props": {
+      "colSizing": "equal",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "wrap-cateOne",
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#firstLine-cateOne"
+    ]
+  },
+  "flex-layout.col#firstLine-cateOne": {
+    "title": "Banner 1",
+    "props": {
+      "blockClass": "txCateHome"
+    },
+    "children": [
+      "info-card#firstLine-cateOne"
+    ]
+  },
+  "info-card#firstLine-cateOne": {
+    "props": {
+      "isFullModeStyle": true,
+      "subhead": "The Explorer Blitz Lace pairs a breathable upper with an ultra-light sole for all-day wearability.",
+      "callToActionMode": "button",
+      "callToActionText": "SHOP SNEAKERS",
+      "textPosition": "CENTER",
+      "textAlignment": "center",
+      "blockClass": "txCateHome"
+    }
+  },
+  "flex-layout.row#secondLine-cate": {
+    "title": "05 - Título Cate 2 D+M",
+    "props": {
+      "blockClass": "wrap-titleCateHome"
+    },
+    "children": [
+      "rich-text#secondLine-cateOne"
+    ]
+  },
+  "rich-text#secondLine-cateOne": {
+    "title": "Título",
+    "props": {
+      "text": "Compra por Categoría",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "titleCateHome"
+    }
+  },
+  "slider-layout#shoesSlide": {
+    "props": {
+      "blockClass": "shoesSlide",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always"
+    },
+    "children": [
+      "info-card#secondLine-cateOne",
+      "info-card#secondLine-cateTwo",
+      "info-card#secondLine-cateThree",
+      "info-card#secondLine-cateFour",
+      "info-card#secondLine-cateFitht"
+    ]
+  },
+  "flex-layout.row#secondLine-banners": {
+    "title": "06 - Banners Cate 2 D+M",
+    "props": {
+      "colSizing": "equal",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "wrap-cateTwo",
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#secondLine-cateOne",
+      "flex-layout.col#secondLine-cateOTwo",
+      "flex-layout.col#secondLine-cateOThree",
+      "flex-layout.col#secondLine-cateOFour",
+      "flex-layout.col#secondLine-cateOFifth"
+    ]
+  },
+  "slider-layout#secondLine-bannersMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "desktopOnly",
+      "showNavigationArrows": "always",
+      "blockClass": "carouselInfoCardHome"
+    },
+    "children": [
+      "info-card#secondLine-cateOne"
+    ]
+  },
+  "flex-layout.col#secondLine-cateOne": {
+    "title": "Banner 1",
+    "props": {
+      "blockClass": "cardInfoCateOne"
+    },
+    "children": [
+      "info-card#secondLine-cateOne"
+    ]
+  },
+  "info-card#secondLine-cateOne": {
+    "props": {
+      "imageUrl": "assets/Imagen_134.png",
+      "isFullModeStyle": false,
+      "callToActionMode": "link",
+      "callToActionText": "zapatillas de mujer",
+      "textPosition": "center",
+      "blockClass": "shoesP"
+    }
+  },
+  "flex-layout.col#secondLine-cateOTwo": {
+    "title": "Banner 1",
+    "props": {
+      "blockClass": "cardInfoCateOne"
+    },
+    "children": [
+      "info-card#secondLine-cateTwo"
+    ]
+  },
+  "info-card#secondLine-cateTwo": {
+    "props": {
+      "imageUrl": "assets/Imagen_135.png",
+      "isFullModeStyle": false,
+      "callToActionMode": "link",
+      "callToActionText": "zapatillas de mujer",
+      "textPosition": "center",
+      "blockClass": "shoesP"
+    }
+  },
+  "flex-layout.col#secondLine-cateOThree": {
+    "title": "Banner 1",
+    "props": {
+      "blockClass": "cardInfoCateOne"
+    },
+    "children": [
+      "info-card#secondLine-cateThree"
+    ]
+  },
+  "info-card#secondLine-cateThree": {
+    "props": {
+      "imageUrl": "assets/Imagen_136.png",
+      "isFullModeStyle": false,
+      "callToActionMode": "link",
+      "callToActionText": "zapatillas de mujer",
+      "textPosition": "center",
+      "blockClass": "shoesP"
+    }
+  },
+  "flex-layout.col#secondLine-cateOFour": {
+    "title": "Banner 1",
+    "props": {
+      "blockClass": "cardInfoCateOne"
+    },
+    "children": [
+      "info-card#secondLine-cateFour"
+    ]
+  },
+  "info-card#secondLine-cateFour": {
+    "props": {
+      "imageUrl": "assets/Imagen_137.png",
+      "isFullModeStyle": false,
+      "callToActionMode": "link",
+      "callToActionText": "zapatillas de mujer",
+      "textPosition": "center",
+      "blockClass": "shoesP"
+    }
+  },
+  "flex-layout.col#secondLine-cateOFifth": {
+    "title": "Banner 1",
+    "props": {
+      "blockClass": "cardInfoCateOne"
+    },
+    "children": [
+      "info-card#secondLine-cateFitht"
+    ]
+  },
+  "info-card#secondLine-cateFitht": {
+    "props": {
+      "imageUrl": "assets/Imagen_138.png",
+      "isFullModeStyle": false,
+      "callToActionMode": "link",
+      "callToActionText": "zapatillas de mujer",
+      "textPosition": "center",
+      "blockClass": "shoesP"
+    }
+  },
+  "image#example": {
+    "props": {
+      "src": "assets/Imagen_139.png"
+    }
+  },
+  "info-card#descriptionShoes": {
+    "props": {
+      "textPosition": "left",
+      "imageUrl": "assets/Imagen_141.png",
+      "headline": "Most in-demand",
+      "subhead": "The Kinetic Impact Lace is quickly becoming the “It” Sneaker for everyday styling.",
+      "callToActionText": "SHOP SNEAKERS",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#sliderTitle": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "you may also like",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "product-summary.shelf#demo1": {
+    "children": [
+      "product-images",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "list-context.product-list#moreShoes": {
+    "blocks": [
+      "product-summary.shelf#demo1"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "collection": "180"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "rich-text#txt1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**FOOTWEAR YOU CAN RELY ON EVERY STEP OF THE WAY**",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txt2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Shop quality shoes for your heart and sole – our footwear is designed to cherish your every step. At SOREL, we understand you cannot control the weather. But you can control how prepared you are. That’s why our collection of men’s, women’s, and kids’ footwear includes options to keep your feet warm, dry, and protected. With key features such as seam-sealed waterproof technology, extreme traction, insulation, drawstring closures, and more, your feet will thank you for the support.",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "flex-layout.row#texts": {
+    "children": [
+      "flex-layout.col#textsLarge",
+      "flex-layout.col#textssmall"
+    ]
+  },
+  "flex-layout.col#textsLarge": {
+    "children": [
+      "rich-text#txtTitle1",
+      "rich-text#txtBody1"
+    ]
+  },
+  "flex-layout.col#textssmall": {
+    "children": [
+      "rich-text#txtTitle2",
+      "rich-text#txtBody2"
+    ]
+  },
+  "rich-text#txtTitle1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**SNEAKERS, SANDALS, SNOW BOOTS, RAIN BOOTS, CHUKKAS & MORE!**",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txtBody1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Hitting the rugged mountains? Heading into a blizzard on your way to work? Keep your cool with our footwear designed to take you there – explore our selection of snow boots, rain boots, and hiking boots with thick insulated linings, traction, and resilient exteriors such as waterproof suede, durable water and wind resistant PU coated synthetics, and leather. Facing the urban jungle? Fashion meets functionality in our range of ankle boots, wedges, and chukkas. For busy lifestyles run off their feet, shop our sneakers. These are perfect for pounding the city pavement or traversing sprawling landscapes. Warm, sunny weather calls for sandals. Whether you are spending a day at the beach or heading to lunch with friends, our range of comfy, chic sandals are your go-to. At SOREL, we believe that no matter the occasion, style shouldn’t be compromised. That’s why our footwear has key features such as waterproof suede, rubber soles for strong traction, and removable molded EVA footbeds with textile topcovers. Stomp down the streets in a pair of our heeled Chelsea booties or head to a meeting in our classy chukkas. SOREL’s footwear has earned a reputation for providing comfort and quality on your everyday journey.",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txtTitle2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**SOREL KID'S BOOTS: CELBRATE YOUR CHILD'S EVERY STEP**",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txtBody2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "text": "When it comes to finding the right footwear for your child, you can guarantee SOREL’s kids’ boots can withstand the elements and their adventurous lifestyles. Keep the cold weather out in our collection of boots with insulation, rubber soles, seam-sealed waterproof technology, and other key features to give your child the security they need for their everyday journeys. At SOREL, we understand the importance of having quality, reliable footwear you can count on. Whether you are out on a hiking expedition, trudging through heavy snow, or darting into the office in the rain, our shoes are designed to keep you warm, dry, and protected. Enjoy free shipping with no minimum spend from SOREL.",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  }
+}

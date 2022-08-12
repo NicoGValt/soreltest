@@ -1,0 +1,37 @@
+.headerRowBackground--imageDrawerSearch {
+  position: absolute;
+  left: 3rem;
+  top: 29px;
+  width: 20px;
+}
+.headerRowContainer--imageDrawerSearch
+  :global(.vtex-store-drawer-0-x-menuIcon) {
+  display: none;
+}
+.headerRowBackground--imageDrawerSearch::after {
+  content: "";
+  background-image: url("assets/search.png");
+  width: 19px;
+  height: 19px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.headerRowContainer--main-header-mobile {
+  min-height: 50px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 17px 15px 8px 18px;
+}
+:global(.vtex-pageHeader__title) {
+  margin-bottom: 1.5rem;
+}
+:global(.vtex-button__label) {
+  line-height: 1.2rem;
+}

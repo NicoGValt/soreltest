@@ -1,0 +1,55 @@
+{
+    "store.custom#nmision": {
+        "blocks": [
+            "flex-layout.row#nmision"
+        ]
+    },
+
+    
+    "flex-layout.row#nmision": {
+        "children": [
+            "flex-layout.col#menuInstitucional",
+            "flex-layout.col#text-nmision"
+        ],
+        "props": {
+            "blockClass":"estaticPage",
+            "horizontalAlign": "left",
+            "colGap": 7,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 4,
+            "marginTop": 8
+        }
+    },
+    
+    "flex-layout.col#text-nmision": {
+        "children": [
+            "rich-text#title-nmision",
+            "rich-text#nmision"
+        ],
+        "props": {
+            "blockclass": "textColumn",
+            "preventVerticalStretch": true,
+            "width": "75%"
+        }
+    },
+    "rich-text#title-nmision": {
+        "title":"Menu Footer ",
+        "props": {
+            "text": "# ¿Cuál es nuestra misión?",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-1"
+        }
+    },
+    "rich-text#nmision": {
+        "props": {
+            "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "blockClass": "staticPage",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    }
+}

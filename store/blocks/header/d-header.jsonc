@@ -1,0 +1,37 @@
+{
+  "header-layout.desktop": {
+    "title": "01 - Header Desktop",
+    "children": [
+      "flex-layout.row#preHeader",
+      "sticky-layout#logoSearch"
+    ]
+  },
+  "sticky-layout#logoSearch": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#logoSearchHeader"
+    ]
+  },
+  "flex-layout.row#logoSearchHeader": {
+    "children": [
+      "flex-layout.col#logo",
+      "vtex.menu@2.x:menu#main-menu",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#extras",
+      "login",
+      "minicart.v2#lyracons"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  }
+}

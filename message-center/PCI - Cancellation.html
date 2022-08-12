@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+    <title>{{accountInfo.TradingName}}</title>
+    <style type="text/css">
+        /* Resets: see reset.css for details */
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #ebebeb;
+        }
+
+        .ExternalClass {
+            width: 100%;
+            background-color: #ebebeb;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        body {
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            padding: 0;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 100% !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            .status {
+                padding-bottom: 0px;
+            }
+        }
+
+        /* Styles for forcing columns to rows */
+        @media only screen and (max-width: 600px) {
+            /* force container columns to (horizontal) blocks */
+            .container {
+                border-radius: 0 !important;
+            }
+
+            .no-padding-top-bottom-mobile {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding: 0 !important;
+            }
+
+            .img-product {
+                width: 70px;
+            }
+
+            .side-border td {
+                padding-left: 0;
+            }
+
+            .button {
+                padding: 11px 0 !important;
+                font-size: 13px;
+                width: 100%;
+            }
+
+            .table-button {
+                width: 100% !important;
+            }
+
+            td[class="force-col"] {
+                display: block;
+                padding-right: 0 !important;
+            }
+
+            table[class="col-3"] {
+                /* unset table align="left/right" */
+                float: none !important;
+                width: 100% !important;
+                /* change left/right padding and margins to top/bottom ones */
+                padding-bottom: 12px;
+                border-bottom: 1px solid #eee;
+            }
+            /* remove bottom border for last column/row */
+            table[id="last-col-3"] {
+                border-bottom: none !important;
+            }
+            /* align images right and shrink them a bit */
+            img[class="col-3-img"] {
+                float: right;
+                margin-left: 6px;
+                max-width: 130px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .status {
+                width: 100% !important;
+            }
+
+            .status div {
+                width: 200px !important;
+            }
+        }
+    </style>
+</head>
+
+<body marginwidth="0" marginheight="0" bgcolor="#fff" style="padding: 0px 0px; color: #333;" leftmargin="0" topmargin="0">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="background: #FFFFFF;" align="center">
+                <div style="box-sizing: border-box;margin-top: 1rem;padding-bottom: 1rem;margin-bottom: 2rem;border-bottom: 1px solid #e0e0e0;">
+                    <a href="https://www.lyracons.com/" style="box-sizing: border-box !important;display: block;width: 100%;">
+                        <img alt="" border="0" width="auto" src="https://lyracons.vtexassets.com/assets/vtex/assets-builder/lyracons.demomoda/0.0.0/logo.png" style="outline: none;text-decoration: none;border: none;width: auto;height: 29px;"></img>
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class="mv4-ns" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; max-width: 40rem; width: 100%; background-color: #fff; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;" bgcolor="#fff">
+        <tr style="box-sizing: border-box !important;">
+            <td align="left" valign="top" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                <table class="mv4-ns" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; max-width: 40rem; width: 100%; background-color: #fff; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                    <tr style="box-sizing: border-box !important;">
+                        <td class="ph4-ns" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; width: 100%; padding-bottom: 2rem; text-align: center !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;"
+                            align="center">
+                            <h1 style="margin: 0; margin-top: 20px;box-sizing: border-box !important;color: #ff15a9;font-weight: 300;font-size: 35px; line-height: 40px;">¡Se solicitó el cancelamiento de su pedido!</h1>
+                            <div style="box-sizing: border-box; color: #777; margin-top: .5rem !important;">
+                                Realizado el:<span style="font-weight: 700 !important;">{{formatDate transaction.creationDate}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="box-sizing: border-box !important;">
+                        <td class="ph4-ns" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 100% !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;" align="left">
+                            <div>
+                                <span style="font-size:18px;">Hola, <strong>{{clientProfileData.firstName}}</strong>.</span>
+                                <div style="padding-top:3px;padding-bottom:0px;">Es necesario revisar el pago integrado, tiene que cancelarlo manualmente.
+                            </div>
+                            <div style="box-sizing: border-box; padding-bottom: .5rem; margin-top: .5rem; margin-bottom: .5rem;">
+                                <div style="box-sizing: border-box; border-style: solid; border-width: 1px; border-color: #D3D3D3; border-radius: 0px !important;">
+                                    <div style="box-sizing: border-box; padding-bottom: 1rem !important;">
+                                        <div style="box-sizing: border-box;font-weight: 400; padding-bottom: 1rem; padding-top: 1rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0px 10px 0px 0px !important;border-bottom: 1px solid #D3D3D3;">
+                                            <div style="margin: 0; font-size: 16px;font-weight: 300 !important; box-sizing: border-box !important;color: #000000;">
+                                                Cancelamiento Solicitado
+                                            </div>
+                                        </div>
+                                        <div style="padding-left: 1rem;padding-right: 1rem;padding-top: 1rem;">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <strong style="font-size: 14px;">Valor a cancelar: </strong><span style="box-sizing: border-box; color: #000000;font-size: 14px;">${{formatCurrency payment.actionValue}}</span>
+                                                        </div>
+                                                
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <strong style="font-size: 14px;">Entidad: </strong><span style="box-sizing: border-box; color: #000000;font-size: 14px;">{{payment.acquirer}}</span>
+                                                        </div>
+                                                
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <strong style="font-size: 14px;">Metodo de pago: </strong><span style="box-sizing: border-box; color: #000000;font-size: 14px;">{{payment.name}}</span>
+                                                        </div>
+                                                
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <strong style="font-size: 14px;">TID - Númreo interno: </strong><span style="box-sizing: border-box; color: #000000;font-size: 14px;">{{payment.tid}} - {{payment.ourNumber}}</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div>
+                                                            <strong style="font-size: 14px;">Valor total del pago: </strong><span style="box-sizing: border-box; color: #000000;font-size: 14px;">${{formatCurrency payment.value}}</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="box-sizing: border-box !important;">
+                        <td class="ph4-ns" style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 100% !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;" align="left">
+                            <div style="box-sizing: border-box; padding-bottom: .5rem; margin-top: .5rem; margin-bottom: .5rem;">
+                                <div style="box-sizing: border-box; border-style: solid; border-width: 1px; border-color: #D3D3D3; border-radius: 0px !important;">
+                                    <div style="box-sizing: border-box; padding-bottom: 1rem !important;">
+                                        <div style="box-sizing: border-box;font-weight: 400; padding-bottom: 1rem; padding-top: 1rem; padding-left: 1rem; padding-right: 1rem; border-radius: 0px 10px 0px 0px !important;border-bottom: 1px solid #D3D3D3;">
+                                            <div style="margin: 0; font-size: 16px;font-weight: 300 !important; box-sizing: border-box !important;color: #000000;">
+                                                Productos del pedido
+                                            </div>
+                                        </div>
+                                        <div style="padding-left: 1rem;padding-right: 1rem;padding-top: 1rem;">
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+                                                <tbody>
+                                                    {{#each items}} {{#each ../../../../items}} {{#eq id ../itemId}}
+                                                    <tr style="box-sizing: border-box !important;">
+                                                        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 4rem; padding-right: .5rem; padding-top: .5rem; padding-bottom: .5rem; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;"
+                                                            align="left" valign="top">
+                                                            <img alt="" src="{{imageUrl}}" style="vertical-align: top; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100% !important;"
+                                                            />
+                                                        </td>
+                                                        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; padding-top: .5rem; padding-bottom: .5rem; vertical-align: top !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;"
+                                                            align="left" valign="top">
+                                                            <div class="mv1-ns" style="box-sizing: border-box; line-height: 1.25; font-size: 1rem !important;">{{name}}</div>
+                                                            <div style="box-sizing: border-box; color: #000000 !important;text-align: right;">
+                                                                {{quantity}} un. {{#if sellingPrice}} ${{formatCurrency sellingPrice}} {{else}} Grátis {{/if}}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    {{#each bundleItems}} {{#if name}}
+                                                    <tr style="box-sizing: border-box !important;">
+                                                        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; width: 4rem; padding-right: .5rem; padding-top: .5rem; padding-bottom: .5rem; vertical-align: top; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;"
+                                                            align="left" valign="top">
+                                                            <img alt="" src="{{imageUrl}}" style="vertical-align: top; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; max-width: 100% !important;"
+                                                            />
+                                                        </td>
+                                                        <td style="font-size: 14px; line-height: 20px; box-sizing: border-box; border-collapse: collapse; text-align: left; padding-top: .5rem; padding-bottom: .5rem; vertical-align: top !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;"
+                                                            align="left" valign="top">
+                                                            <div class="mv1-ns" style="box-sizing: border-box; line-height: 1.25; font-size: 1rem !important;">{{name}}</div>
+                                                            <div style="box-sizing: border-box; color: #000000 !important;text-align: right;">
+                                                                {{quantity}} un. {{#if price}} ${{formatCurrency price}} {{else}} Grátis {{/if}}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    {{/if}} {{/each}} {{/eq}} {{/each}} {{/each}}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="background: #FFFFFF;" align="center">
+                <div style="box-sizing: border-box;margin-bottom: 1rem;padding-top: 2rem;margin-top: 2rem;border-top: 1px solid #e0e0e0;">
+                    <table cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" class="container" style="max-width:600px;width: 100%;">
+                        <tr style="box-sizing: border-box !important;">
+                            <td class="ph4-ns" style="text-align:center; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px;width: 100%;">
+                                <span style="display: inline-block;text-decoration:none;font-size: 15px;font-weight: bold;">Seguinos en nuestras redes:                                </span>
+                            </td>
+                        </tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td class="ph4-ns" style="text-align:center; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px;width: 100%;padding-top: 10px;padding-bottom: 20px;">
+                                <a href="https://www.facebook.com/lyraconsParaguay/" target="_blank" style="margin-right: 10px; border: none; text-decoration:none;">
+                                    <img alt="" src="https://lyracons.vtexassets.com/assets/vtex/assets-builder/lyracons.demomoda/0.0.0/facebook.png"/>
+                                  </a>
+                                  <a href="https://www.instagram.com/lyraconspy/" target="_blank" style="margin-right: 10px; border: none; text-decoration:none;">
+                                    <img alt="" src="https://lyracons.vtexassets.com/assets/vtex/assets-builder/lyracons.demomoda/0.0.0/instagram.png"/>
+                                  </a>
+                                  <a href="https://www.linkedin.com/company/lyracons/" target="_blank" style="margin-right: 10px; border: none; text-decoration:none;">
+                                    <img alt="" src="https://lyracons.vtexassets.com/assets/vtex/assets-builder/lyracons.demomoda/0.0.0/linkedin.png"/>
+                                  </a>
+                            </td>
+                        </tr>
+                        <tr style="box-sizing: border-box !important;">
+                            <td class="ph4-ns" style="text-align:center; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px;width: 100%;">
+                                <a href="https://www.lyracons.com/" target="_blank" style="display:block;color: #000; text-decoration:none;font-size: 14px;letter-spacing: 0.2em;">www.lyracons.com</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+{
+  "footer": {
+    "title": "Footer D+M",
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "title": "Footer Desktop",
+    "children": [
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#col-logoFooter",
+      "flex-layout.col#col-socials",
+      "flex-layout.col#col-news"
+    ],
+    "props": {
+      "blockClass": "footerFirstLine",
+      "paddingTop": 0,
+      "colGap": 0,
+      "paddingBottom": 0,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#col-logoFooter": {
+    "children": [
+
+      "rich-text#sloganFooter"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "logoSlogan"
+    }
+  },
+  "logo#footer": {
+    "props": {
+      "blockClass": "logoFooter",
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo.png"
+    }
+  },
+  "rich-text#sloganFooter": {
+    "title": "slogan Footer",
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "blockClass": "sloganFooter",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.col#col-socials": {
+    "children": [
+      "rich-text#follow",
+      "flex-layout.row#socialDesktop"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "socialsNews"
+    }
+  },
+  "rich-text#follow": {
+    "title": "Texto Redes Footer",
+    "props": {
+      "text": "Seguinos en nuestras redes:",
+      "blockClass": "txRedesFooter",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.row#socialDesktop": {
+    "children": [
+      "flex-layout.col#social1",
+      "flex-layout.col#social2",
+      "flex-layout.col#social3"
+    ],
+    "props": {
+      "blockClass": "socials",
+      "marginBottom": 1,
+      "marginTop": 0,
+      "colGap": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#social1": {
+    "children": [
+      "image#social1"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "paddingLeft": 3,
+      "paddingRight": 3
+    }
+  },
+  "flex-layout.col#social2": {
+    "children": [
+      "image#social2"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+  "flex-layout.col#social3": {
+    "children": [
+      "image#social3"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+  "image#social1": {
+    "title": "Logo Facebook",
+    "props": {
+      "blockClass": "socialImg",
+      "src": "assets/facebook.png",
+      "link": "https://www.facebook.com/lyracons/"
+    }
+  },
+  "image#social2": {
+    "title": "Logo Instagram",
+    "props": {
+      "blockClass": "socialImg",
+      "src": "assets/instagram.png",
+      "link": "http://instagram.com/lyraconsoficial"
+    }
+  },
+  "image#social3": {
+    "title": "Logo Linkedin",
+    "props": {
+      "blockClass": "socialImg",
+      "src": "assets/linkedin.png",
+      "link": "http://instagram.com/lyraconsoficial"
+    }
+  },
+  "flex-layout.col#col-news": {
+    "children": [
+      "newsletter"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "newsletter"
+    }
+  },
+  "newsletter": {
+    "props": {
+      "marginBottom": 0,
+      "marginTop": 0,
+      "blockClass": "newsInn",
+      "placeholder": "Ingresá tu mail",
+      "submit": "SUSCRIBITE",
+      "label": "lyracons News"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": [
+      "flex-layout.col#col-menuContact",
+      "flex-layout.col#col-menuInfo",
+      "flex-layout.col#col-menuUni"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 8,
+      "colGap": 6,
+      "paddingBottom": 4,
+      "colSizing": "auto"
+    }
+  },
+  "footer-layout.mobile": {
+    "title": "Footer Mobile",
+    "children": [
+      "flex-layout.row#footer-1-mobile",
+      "flex-layout.row#footer-3"
+    ]
+  },
+  "flex-layout.row#footer-3": {
+    "children": [
+      "flex-layout.col#col-copy",
+      "flex-layout.col#col-tx"
+    ],
+    "props": {
+      "blockClass": "footer3",
+      "paddingTop": 4,
+      "colGap": 6,
+      "paddingBottom": 4,
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#col-copy": {
+    "children": [
+      "rich-text#copyFooter"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "flex-layout.col#col-tx": {
+    "children": [
+      "rich-text#txFooter"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "rich-text#txFooter": {
+    "title": "Texto Footer General",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "blockClass": "txFooter",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#copyFooter": {
+    "title": "Copyright",
+    "props": {
+      "text": "©2021 - Todos los derechos reservados",
+      "blockClass": "copyFooter",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "flex-layout.row#footer-1-mobile": {
+    "children": [
+      "flex-layout.col#col-logoFooter",
+      "flex-layout.col#col-socials",
+      "flex-layout.col#col-news",
+      "flex-layout.col#col-richsContactStores",
+      "vtex.menu@2.x:menu#menu-tyc",
+      "flex-layout.row#seals",
+      "menu-item#nosotrosMobile",
+      "menu-item#tcMobile"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.col#col-richsContactStores": {
+    "children": [
+      "rich-text#menuFooterContact",
+      "rich-text#menuFooterStores"
+    ],
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "richsContactStores"
+    }
+  },
+  "menu-item#nosotrosMobile": {
+    "props": {
+      "id": "nosotrosMobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "NOSOTROS",
+        "text": "NOSOTROS"
+      },
+      "blockClass": "menuItemN1FooterMobile"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#nosotrosMobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#nosotrosMobile": {
+    "children": [
+      "vtex.menu@2.x:menu#nosotrosMobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#nosotrosMobile": {
+    "props": {
+      "blockClass": "menunosotrosMobile",
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#conocenos-m",
+      "menu-item#mision-m",
+      "menu-item#vision-m"
+    ]
+  },
+  "menu-item#conocenos-m": {
+    "props": {
+      "id": "menu-item-conocenos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Conócenos",
+        "text": "Conócenos"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+  "menu-item#mision-m": {
+    "props": {
+      "id": "menu-item-mision",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestra-mision",
+        "noFollow": false,
+        "tagTitle": "Nuestra Misión",
+        "text": "Nuestra Misión"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+  "menu-item#vision-m": {
+    "props": {
+      "id": "menu-item-vision",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestra-vision",
+        "noFollow": false,
+        "tagTitle": "Nuestra Visión",
+        "text": "Nuestra Visión"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+  "menu-item#tcMobile": {
+    "props": {
+      "id": "tcMobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Más Información",
+        "text": "Más Información"
+      },
+      "blockClass": "menuItemN1FooterMobile"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#tcMobile"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#tcMobile": {
+    "children": [
+      "vtex.menu@2.x:menu#tcMobile"
+    ]
+  },
+  "vtex.menu@2.x:menu#tcMobile": {
+    "props": {
+      "blockClass": "menutcMobile",
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#beneficios-m",
+      "menu-item#app-m",
+      "menu-item#extractos-m"
+    ]
+  },
+  "menu-item#beneficios-m": {
+    "props": {
+      "id": "menu-item-beneficios",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Tus Beneficios",
+        "text": "Tus Beneficios"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+  "menu-item#app-m": {
+    "props": {
+      "id": "menu-item-app",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "App lyracons",
+        "text": "App lyracons"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+  "menu-item#extractos-m": {
+    "props": {
+      "id": "menu-item-extractos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Tus extractos",
+        "text": "Tus extractos"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.quantitySelectorTitle {
+  color: #5d5d5d;
+  font-size: 12px;
+  font-weight: 400;
+}
+.quantitySelectorStepper--boxQuantity
+  :global(.vtex-styleguide-9-x-hideDecorators) {
+  border: 0px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  height: 55px;
+  color: #50555b;
+  font-size: 14px;
+  font-weight: 400;
+}
+.quantitySelectorStepper--boxQuantity
+  :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorStepper--boxQuantity
+  :global(.vtex-numeric-stepper__plus-button) {
+  border-color: #d9d9d9;
+  background: white !important;
+  height: 55px;
+}
+@media only screen and (max-width: 768px) {
+  .quantitySelectorStepper--boxQuantity
+    :global(.vtex-styleguide-9-x-hideDecorators) {
+    width: 2rem;
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "drawer#Mobile": {
+    "props":{
+      "isFullWidth":false
+    },
+    "children": [
+      "menu#drawerMobile"
+    ],
+    "blocks": ["drawer-trigger"]
+  },
+  
+  "drawer-trigger": {
+    "children": ["rich-text#open-drawer"]
+  },
+  
+  "rich-text#open-drawer": {
+    "props": {
+      "text": "Comprar",
+      "blockClass": "shopRich"
+    }
+  
+  },
+  
+  "menu#drawerMobile": {
+    "children": [
+      "category-menu#mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+      
+    }
+  },
+
+
+  "category-menu#mobile": {
+    "props": {
+      "blockClass": "menuMobileDrawer",
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "departments": [
+        {
+          "id": 200
+        }
+      ]
+    }
+  },
+
+  "vtex.menu@2.x:menu#main-menuMobile": {
+
+    "children": ["drawer#menuMujer"],
+    "props": {
+      "blockClass": "menuDrawer"
+    }
+  },
+
+  "drawer#menuMujer": {
+    "children": ["vtex.menu@2.x:menu#submenumujer"],
+    "blocks": ["drawer-trigger#menuMujer"],
+    "props": {
+      "text": "Sale",
+      "blockClass": "subMenuMobile"
+    }
+  },
+  "drawer-trigger#menuMujer": {
+    "children": ["rich-text#menuMujer"],
+     "props": {
+      "text": "Mujer",
+      "blockClass": "subMenuMobile"
+    }
+  },
+  "rich-text#menuMujer": {
+    "props": {
+      "text": "Mujer",
+      "blockClass": "subMenuMobile"
+    }
+  },
+  "category-menu#MobileFirst": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "departments": [
+        {
+          "id": 200
+        }
+      ]
+    }
+  }
+}

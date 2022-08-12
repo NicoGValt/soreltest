@@ -1,0 +1,15 @@
+.productAdded {
+    position: relative;
+}
+.productAdded::before {
+  content: "Ya existe en tu carrito";
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 12px;
+  color: #262626;
+  z-index: 9999;
+}

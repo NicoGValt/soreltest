@@ -1,0 +1,323 @@
+.gallery {
+  padding-left: 0;
+}
+
+.galleryTitle--layout {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+.filterPopupTitle,
+.orderByText {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 768px) {
+  .galleryTitle--layout {
+    border-bottom: none;
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+  .galleryItem {
+  }
+  .filterPopupArrowIcon,
+  .filterPopupArrowIcon {
+    display: none;
+    padding-right: 0;
+  }
+
+  .filterPopupButton {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 38px;
+    text-transform: uppercase;
+  }
+
+  .orderByDropdown {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-align-items: center !important;
+    -webkit-align-items: center !important;
+    align-items: center !important;
+  }
+  .totalProducts--layout {
+    padding-left: 25px;
+  }
+  .orderBy--layout {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.orderBy--layout {
+  position: relative;
+  top: -5px;
+}
+@media only screen and (max-width: 768px) {
+  .orderBy--layout {
+    top: 0px;
+  }
+}
+.totalProducts--layout,
+.totalProductsMessage {
+  text-align: left;
+  color: #989898;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 640px) {
+  .totalProducts--layout,
+  .totalProductsMessage {
+    text-align: left;
+    padding-left: 0rem;
+  }
+}
+.filterPopupButton {
+}
+.layoutSwitcher {
+  padding-top: 10;
+}
+
+.totalProductsMessage {
+}
+
+@media only screen and (max-width: 768px) {
+  .filterPopupTitle {
+    font-size: 0;
+  }
+  .filterPopupTitle::before {
+    content: "FILTRÁ POR +";
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .orderByButton .filterPopupTitle::before {
+    display: none;
+  }
+  .orderByButton .filterPopupTitle .orderByText {
+    display: none;
+  }
+
+  .orderByButton .filterPopupTitle {
+    width: 100%;
+    color: black;
+    text-transform: none;
+    font-size: 0;
+  }
+
+  .orderByButton .orderByText {
+    font-size: 0;
+  }
+  .orderByButton .filterPopupTitle::after {
+    content: "";
+    background-image: url("assets/arrowRight.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 8px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 34px;
+  }
+  .orderByButton .filterPopupTitle::before {
+    content: "ORDENÁ POR";
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    top: -3px;
+    left: -10px;
+  }
+  .orderByButton .filterPopupTitle .orderByText::after {
+    display: none;
+  }
+
+  .filterBreadcrumbsText {
+    font-size: 0;
+  }
+  .filterBreadcrumbsText::before {
+    content: "Filtrá por:";
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
+  .filterBreadcrumbsItem {
+  }
+  .filterBreadcrumbsItem::before {
+    position: absolute;
+    left: 1rem;
+    content: "";
+    background-image: url("assets/chevron-right.png");
+    transform: rotate(180deg);
+    width: 8px;
+    height: 13px;
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+  }
+  .filterAccordionBreadcrumbs {
+    border: none;
+  }
+  .filterBreadcrumbsItemName {
+    font-size: 14px;
+    padding-left: 0;
+    position: relative;
+    top: 1px;
+  }
+  .accordionFilterItemOptions {
+    padding-left: 2rem;
+  }
+  .accordionFilterItemIcon {
+    transform: rotate(-90deg);
+  }
+  .filterBreadcrumbsItem .caretIcon {
+    display: none;
+  }
+  .filterClearButtonWrapper .vtex-button {
+    color: black;
+  }
+}
+.orderByButton {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .orderByButton {
+    padding: 0;
+  }
+}
+
+.orderByOptionsContainer {
+  z-index: 9;
+  top: -17px;
+}
+@media only screen and (min-width: 640px) {
+  .orderByOptionsContainer {
+    top: auto;
+  }
+}
+.orderByOptionsContainer .orderByOptionItem {
+  height: 53px;
+}
+.buttonShowMore :global(.vtex-button) {
+  margin-bottom: 2.25rem;
+  margin-top: 2.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .buttonShowMore :global(.vtex-button) {
+    width: 100%;
+    max-width: 13rem;
+    height: 3.5rem;
+  }
+  .filterAccordionItemBox :global(.vtex-checkbox__inner-container),
+  .filterAccordionItemBox :global(.vtex-checkbox__container),
+  .filterAccordionItemBox :global(.vtex-checkbox__box-wrapper) {
+    height: 26px;
+    width: 26px;
+  }
+
+  .filterAccordionItemBox :global(.vtex-checkbox__label) {
+    line-height: 26px;
+  }
+  .filterAccordionItemBox :global(.vtex__icon-check) {
+    height: 18px;
+    width: 18px;
+  }
+  .filterAccordionItemBox :global(.vtex-checkbox__container) {
+    margin-right: 1.5rem;
+  }
+}
+
+.galleryItem {
+  padding: 0;
+}
+@media only screen and (min-width: 640px) {
+  .galleryItem {
+    padding: 10px;
+    flex-basis: 33.3333333% !important;
+    max-width: 33.3333333% !important;
+  }
+  .buttonShowMore :global(.vtex-button) {
+    width: auto;
+  }
+}
+
+.filterMessage {
+  color: #00195d;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  line-height: 1.25rem;
+}
+.filter__container {
+  border-color: #d9d9d9;
+}
+.filter__container--title {
+  display: none;
+}
+.filterTitle {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.filterItem {
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0.25rem 0;
+}
+:global(.vtex-checkbox__label) {
+  color: #5d5d5d;
+}
+.buttonShowMore :global(.vtex-button__label) {
+  font-size: 0;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #000000;
+}
+.buttonShowMore :global(.vtex-button__label)::before {
+  content: "Ver más productos";
+  text-transform: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+}
+
+.filterTemplateOverflow {
+  max-height: 100% !important;
+}
+.filterBreadcrumbsText,
+.filterBreadcrumbsItemName {
+  color: #828282;
+}
+.accordionFilterItemTitle {
+  color: #000000;
+}
+.filterApplyButtonWrapper :global(.vtex-button) {
+}
+.categoryParent {
+  display: none;
+}

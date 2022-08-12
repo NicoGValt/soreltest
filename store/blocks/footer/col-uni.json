@@ -1,0 +1,66 @@
+{
+  "flex-layout.col#col-menuUni": {
+    "children": [
+      "rich-text#titleMenuUniFooter",
+      "vtex.menu@2.x:menu#menu-uniDesktop"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+
+  "rich-text#titleMenuUniFooter": {
+    "title":"Título Más Información",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "MÁS INFORMACIÓN:",
+      "blockClass": "titleMenuUniFooter"
+    }
+  },
+  "vtex.menu@2.x:menu#menu-uniDesktop": {
+    "title":"Menu Más Información",
+    "props": {
+      "blockClass": "footerMenuInfoDesktop",
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "beneficios",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Tus beneficios",
+            "text": "Tus beneficios"
+          }
+        },
+        {
+          "id": "app",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "App lyracons",
+            "text": "App lyracons"
+          }
+        },
+        {
+          "id": "extractos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Tus extractos",
+            "text": "Tus extractos"
+          }
+        }
+      ]
+    }
+  }
+}

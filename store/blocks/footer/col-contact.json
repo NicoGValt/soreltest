@@ -1,0 +1,65 @@
+{
+  "flex-layout.col#col-menuContact": {
+    "children": [
+      "rich-text#menuFooterContact",
+      "rich-text#menuFooterStores",
+      "vtex.menu@2.x:menu#menu-tyc",
+      "flex-layout.row#seals"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+
+  "rich-text#menuFooterContact": {
+    "title": "Menu Footer Contacto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "![CONTACTO](assets/mail.png) [CONTACTO](/contacto)",
+      "blockClass": "footerMenuDesktopContact"
+    }
+  },
+  "rich-text#menuFooterStores": {
+    "title": "Menu Footer Locales",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "![LOCALES](assets/store.png) [LOCALES](/)",
+      "blockClass": "footerMenuDesktopStore"
+    }
+  },
+  "vtex.menu@2.x:menu#menu-tyc": {
+    "title": "Menu Footer TyC",
+    "props": {
+      "blockClass": "footerMenuTycDesktop",
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "tyc",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/bases-y-condiciones",
+            "noFollow": false,
+            "tagTitle": "tyc",
+            "text": "Bases y Condiciones"
+          }
+        },
+        {
+          "id": "politica",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/bases-y-condiciones",
+            "noFollow": false,
+            "tagTitle": "politica",
+            "text": "Políticas de privacidad"
+          }
+        }
+      ]
+    }
+  }
+}

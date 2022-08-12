@@ -1,0 +1,61 @@
+{
+  "flex-layout.row#brands": {
+    "children": [
+      "flex-layout.col#brand1",
+      "flex-layout.col#brand2",
+      "flex-layout.col#brand3"
+    ],
+    "props": { 
+      "blockClass": "brands",
+      "marginBottom": 6,
+      "marginTop": 6,
+      "preserveLayoutOnMobile":true,
+      "preventHorizontalStretch":true
+    }
+  },
+  "flex-layout.col#brand1": {
+    "children": ["image#brand1"],
+    "props": {
+      "verticalAlign":"middle",
+      "paddingLeft": 3,
+      "paddingRight": 3
+    }
+  },
+  "flex-layout.col#brand2": {
+    "children": ["image#brand2"],
+    "props": {
+      "verticalAlign":"middle",
+      "paddingLeft": 3,
+      "paddingRight": 3
+
+    }
+  },
+  "flex-layout.col#brand3": {
+    "children": ["image#brand3"],
+    "props": {
+      "verticalAlign":"middle",
+      "paddingLeft": 3,
+      "paddingRight": 3
+
+    }
+  },
+
+  "image#brand1": {
+    "props": {
+      "blockClass": "branImg",
+      "src": "https://lyracons.vtexassets.com/assets/vtex.file-manager-graphql/images/2f383ef0-3a6e-4b86-a3cb-e1f3a7307a4f___b7e16d0094d27daf8b7e6e8a94348a34.png"
+    }
+  },
+  "image#brand2": {
+    "props": {
+      "blockClass": "branImg",
+      "src": "https://lyracons.vtexassets.com/assets/vtex.file-manager-graphql/images/0db17059-b9bf-4491-b124-371f6ebba0f7___b78e5455331c15b2d81e0a147df7dd7c.png"
+    }
+  },
+  "image#brand3": {
+    "props": {
+      "blockClass": "branImg",
+      "src": "https://lyracons.vtexassets.com/assets/vtex.file-manager-graphql/images/54ca3753-f5d0-42de-b260-f5e14dbe9ad9___10c0e9ad9187722dbd6a33142f252f24.png"
+    }
+  }
+}

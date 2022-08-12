@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
+
+.menuContainerNav--menuStyle {
+    height: 19px !important;
+    margin: 0;
+    margin-top: 38px;
+    padding: 0;
+    padding-left: 35px;
+    padding-right: 12.5px;
+}
+
+.menuContainerNav--exM {
+    height: 19px !important;
+    margin: 0;
+    padding: 0;
+    padding-left: 35px;
+    padding-right: 12.5px;
+}
+
+.menuContainer--menuStyle {
+    height: 19px !important;
+    margin: 0;
+    padding: 0;
+}
+
+.menuContainer--exM {
+    height: 19px !important;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItem--menuStyle {
+    height: 19px !important;
+    margin: 0;
+    padding: 0;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+
+.menuItem--exM {
+    height: 19px !important;
+    margin: 0;
+    padding: 0;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+
+.styledLinkContainer--menuStyle {
+    height: 19px !important;
+    margin: 0;
+    padding: 0;
+}
+
+.styledLinkContainer--fav {
+    height: 19px !important;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    padding-left:12.5px ; 
+    padding-right:12.5px ; 
+}
+
+.styledLinkContainer--ship {
+    height: 19px !important;
+    margin: 0;
+    margin-top: 34.5px;
+    padding: 0;
+    padding-left: 12.5px;
+}
+
+.styledLink--menuStyle {
+    color: #ffffff;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 2.56px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: normal;
+}
+
+.submenuWrapper--isOpen{
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    margin-top: 22px;
+}
+

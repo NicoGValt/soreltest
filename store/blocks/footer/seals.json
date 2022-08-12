@@ -1,0 +1,78 @@
+{
+    "flex-layout.row#seals": {
+        "children": [
+            "flex-layout.col#seal1",
+            "flex-layout.col#seal2",
+            "flex-layout.col#seal3"
+        ],
+        "props": {
+            "blockClass": "seals",
+            "marginBottom": 0,
+            "marginTop": 6,
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        }
+    },
+    "flex-layout.col#seal1": {
+        "children": [
+            "image#seal1"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "paddingLeft": 5,
+            "paddingRight": 3
+        }
+    },
+    "flex-layout.col#seal2": {
+        "children": [
+            "image#seal2"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "paddingLeft": 3,
+            "paddingRight": 3
+        }
+    },
+    "flex-layout.col#seal3": {
+        "children": [
+            "image#seal3"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "paddingLeft": 3,
+            "paddingRight": 3
+        }
+    },
+    "image#seal1": {
+        "title":"Logo Lyracons",
+        "props": {
+            "blockClass": "",
+            "src": "assets/lyracons.png",
+            "maxWidth": "68px",
+            "maxHeight": "15px",
+            "link": "http://www.lyracons.com/"
+        }
+    },
+    "image#seal2": {
+        "title":"Logo Vtex",
+        "props": {
+            "blockClass": "",
+            "src": "assets/vtex.png",
+            "maxWidth": "40px",
+            "maxHeight": "15px",
+            "link":"https://vtex.com/ar-es/"
+        }
+    },
+    "image#seal3": {
+        "title":"Logo Datafiscal",
+        "props": {
+            "blockClass": "",
+            "src": "assets/datafiscalfooter.png",
+            "maxWidth": "40px",
+            "maxHeight": "18px"
+        }
+    }
+    
+  }
+  

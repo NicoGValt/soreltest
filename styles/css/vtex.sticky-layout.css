@@ -1,0 +1,10 @@
+.wrapper--sticky-header {
+}
+
+.container--sticky-header { 
+    height: 104px !important;
+    padding-top: 11px;
+    padding-left: 70px;
+    padding-right: 41px;
+    background-color: black;
+}

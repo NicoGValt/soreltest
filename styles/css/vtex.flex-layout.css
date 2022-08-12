@@ -1,0 +1,348 @@
+.flexRowContent--wrap-preHeader {
+  background-image: url("assets/topbanner_desktop.png");
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.flexRow--main-header {
+  background: transparent;
+}
+.flexRow--menuCart {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.flexRow--menuCart :global(.vtex-minicart-2-x-openIconContainer) {
+  padding: 0px;
+}
+.flexRow--menuCart :global(.vtex-button) {
+  min-height: auto;
+  margin: 0;
+}
+
+.flexRow--wrap-titleCateHome {
+  margin: 0 ;
+  margin-top: 70px;
+}
+@media only screen and (max-width: 768px) {
+  .flexRow--wrap-titleCateHome {
+    margin: 30px 0 0 0;
+    max-width: 100%;
+  }
+  .flexRowContent--wrap-preHeader {
+    background-image: url("assets/topbanner_mobile.png");
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center !important;
+  }
+}
+
+.flexRow--footerFirstLine {
+  background-color: #f5f5f5;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.flexCol--logoSorel{
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 84px !important;
+}
+
+.flexCol--newsletter {
+  border-left: 1px solid #d9d9d9;
+  padding-left: 30px;
+}
+.flexCol--logoSlogan,
+.flexCol--newsletter,
+.flexCol--socialsNews {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .flexCol--logoSlogan,
+  .flexCol--newsletter,
+  .flexCol--socialsNews {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f5f5f5;
+    border: 0;
+  }
+  .flexCol--logoSlogan {
+    padding-top: 25px;
+  }
+  .flexCol--newsletter {
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .flexRowContent--footer3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .flexCol--bannerTcUni {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flexCol--richsContactStores {
+    flex-direction: row;
+    padding: 0 50px;
+    margin-top: 40px;
+  }
+  .flexColChild--richsContactStores {
+    width: 50%;
+    text-align: center;
+  }
+  .flexRow--seals {
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .flexRowContent--menu-row {
+    padding-top:0px;
+    margin-top:20px;
+  }
+
+  .flexRowContent--filterOrderMobile {
+    flex-direction: row-reverse;
+  }
+  .flexRow--breadcrumbCustom,
+  .flexRow--searchtitleCustom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .flexRow--filterOrderMobile {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .flexCol--filterMobileCol {
+    border-right: 1px solid black;
+  }
+  .flexRow--filterOrderMobile,
+  .flexColChild--orderByMobileCol {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -ms-align-items: center !important;
+    -webkit-align-items: center !important;
+    align-items: center !important;
+    -ms-justify-content: space-between !important;
+    -webkit-justify-content: space-between !important;
+    justify-content: space-between !important;
+    -ms-align-items: center !important;
+    -webkit-align-items: center !important;
+    align-items: center !important;
+  }
+}
+.flexRowContent--brands {
+  -ms-justify-content: space-between !important;
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+}
+
+.flexRowContent--conQuantityBuy {
+  -ms-justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-align-items: flex-end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .flexRowContent--conQuantityBuy {
+    margin-bottom: 10px;
+  }
+}
+
+.flexRow--conQuantityBuy {
+  margin-top: 30px;
+}
+
+.flexColChild--buttonAddtoCart :global(.vtex-button) {
+  border: none;
+  padding: 0 2.5rem;
+  position: relative;
+  height: 55px;
+  top: -11px;
+  border-radius: 4px;
+  background: #ff15a9;
+  color: white;
+}
+
+.flexColChild--buttonAddtoCart :global(.vtex-button__label) {
+  white-space: nowrap;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.flexRowContent--seals {
+  -ms-justify-content: center !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+  -ms-align-items: center !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+}
+.flexRowContent--seals :global(.vtex-flex-layout-0-x-flexCol) {
+  padding-left: 0px;
+}
+.flexRow--searchMobile {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.flexRow--infoPreFooter {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background: #262626;
+}
+
+.flexRowContent--socials {
+  -ms-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.flexRowContent--socials :global(.vtex-flex-layout-0-x-flexCol) {
+  padding: 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .flexRowContent--seals {
+    -ms-justify-content: start !important;
+    -webkit-justify-content: start !important;
+    justify-content: start !important;
+    -ms-align-items: center !important;
+    -webkit-align-items: center !important;
+    align-items: center !important;
+  }
+
+  .flexRowContent--socials {
+    -ms-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  .flexRowContent--minicart-footer {
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.flexRowContent--rowAccordion {
+  display: block;
+}
+.flexRowContent--rowAccordion .stretchChildrenWidth {
+  display: block !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.flexColChild--colAccordionPV {
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.flexColChild--colAccordionPV :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin: 0px;
+}
+
+.flexColChild--colAccordionPV :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #989898;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.flexColChild--colAccordionPV :global(.vtex-menu-2-x-submenuAccordion) {
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .flexRowContent--mainPv {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .flexRowContent--mainPv
+    :global(.vtex-product-identifier-0-x-product-identifier) {
+    font-size: 12px;
+  }
+  .flexRowContent--estaticPage,
+  .flexRowContent--staticPageStores,
+  .flexRowContent--staticPageStoresImagem,
+  .flexRowContent--staticPageStoresText {
+    margin-top: 0;
+    padding: 0 1rem;
+  }
+  .flexRowContent--staticPageStoresText {
+    display: block;
+  }
+  .flexRowContent--staticPageStoresText
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+  }
+}
+
+.flexRowContent--menuCart :global(.vtex-checkout-summary-0-x-summaryItemLabel),
+.flexRowContent--menuCart
+  :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+  display: none !important;
+}
+.flexRow--giftCardSteps {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.flexRowContent--tCardPage {
+  margin-top: 0px !important;
+}
+
+.flexCol--submenu-position-left {
+  width: 50%;
+}
+.flexColChild--submenu-position-left {
+  width: 50%;
+}
+.flexCol--submenu-position-right {
+  width: 50%;
+}
+
+.flexRow--menu-row {
+  background-color: rgb(38, 38, 38);
+}
+
+.flexColChild--submenu-position-left :global(.vtex-menu-2-x-menuContainer) {
+  flex-direction: column;
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+.flexColChild--submenu-position-left :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #262626;
+  font-size: 18px;
+}
+.flexColChild--submenu-position-left
+  :global(.vtex-menu-2-x-styledLinkContent):hover {
+    -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  padding-left: 3px;
+}
+.flexRow--subMenuTop {
+  width: 100%;
+}
+
+.stretchChildrenWidth--sumeMenu{
+  height: 160px !important;
+  background-color: red;
+}
+.flexCol--sumeMenu{
+  height: 160px !important;
+}

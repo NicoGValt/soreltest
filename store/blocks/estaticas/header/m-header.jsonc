@@ -1,0 +1,72 @@
+{
+  "header-layout.mobile": {
+    "title":"01 - Header Mobile",
+    "children": ["flex-layout.row#preHeader", "header-row#mobile"]
+  },
+  "header-row#mobile": {
+    "props": {
+      "fullWidth": false,
+      "inverted": false,
+      "sticky": true,
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "drawer",
+      "drawer#searchMobile",
+      "header-spacer",
+      "logo#lyracons",
+      "header-spacer",
+      "login",
+      "minicart.v2#lyracons"
+    ]
+  },
+
+  "header-row#search": {
+    "props": {
+      "blockClass": "imageDrawerSearch"
+    },
+    "children": ["drawer#search"]
+  },
+  "drawer#search": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "maxWidth":"90%"
+    }
+  },
+  "drawer": {
+    "props": {
+      "blockClass": "hamburger"
+    },
+    "children": ["menu#drawer"]
+  },
+ 
+  "menu#drawer": {
+    "children": ["vtex.menu@2.x:menu#main-menuMobile"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMobileDrawer"
+    }
+  },
+  "drawer#searchMobile": {
+    "children": ["search-bar#mobile"],
+    "blocks": ["drawer-trigger#searchMobile"]
+  },
+
+  "drawer-trigger#searchMobile": {
+    "children": ["image#searchMobile"]
+  },
+
+  "image#searchMobile": {
+    "props": {
+      "blockClass": "imgSearchMobile",
+      "src": "assets/search.png"
+    }
+  }
+}

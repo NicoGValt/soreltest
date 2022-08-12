@@ -1,0 +1,89 @@
+{
+  "header-layout.mobile": {
+    "title":"01 - Header Mobile",
+    "children": ["flex-layout.row#preHeader", "header-row#mobile","flex-layout.row#searchBar"]
+  },
+  "header-row#mobile": {
+    "props": {
+      "fullWidth": false,
+      "inverted": false,
+      "sticky": true,
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "drawer",
+      "header-spacer",
+      "logo#sorel",
+      "header-spacer",
+      "login",
+      "minicart.v2#lyracons"
+    ]
+  },
+  "flex-layout.row#searchBar":{
+    "children":[
+      "search-bar"
+    ]
+  },
+  "search-bar":{
+    "props":{
+      "placeholder": "¿Qué buscas?"
+    }
+  },
+  "header-row#search": {
+    "props": {
+      "blockClass": "imageDrawerSearch"
+    },
+    "children": ["drawer#search"]
+  },
+  "drawer#search": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "maxWidth":"90%"
+    }
+  },
+  "drawer": {
+    "props": {
+      "blockClass": "hamburger"
+    },
+    "children": ["menu#drawer"]
+  },
+ 
+  "menu#drawer": {
+    "children": ["vtex.menu@2.x:menu#main-menuMobile"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menuMobileDrawer"
+    }
+  },
+  "drawer#searchMobile": {
+    "children": ["search-bar#mobile"],
+    "blocks": ["drawer-trigger#searchMobile"]
+  },
+
+  "drawer-trigger#searchMobile": {
+    "children": ["image#searchMobile"]
+  },
+
+  "image#searchMobile": {
+    "props": {
+      "blockClass": "imgSearchMobile",
+      "src": "assets/search.png"
+    }
+  },
+  "logo#sorel": {
+    "props": {
+      "width": 104,
+      "height": 18,
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-sorel-mobile.png"
+    }
+  }
+}

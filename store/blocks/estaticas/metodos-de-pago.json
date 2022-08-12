@@ -1,0 +1,54 @@
+{
+    "store.custom#metodos": {
+        "blocks": [
+            "flex-layout.row#metodos"
+        ]
+    },
+
+    
+    "flex-layout.row#metodos": {
+        "children": [
+            "flex-layout.col#menuInstitucional",
+            "flex-layout.col#text-metodos"
+        ],
+        "props": {
+            "blockClass":"estaticPage",
+            "horizontalAlign": "left",
+            "colGap": 7,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 4,
+            "marginTop": 8
+        }
+    },
+    
+    "flex-layout.col#text-metodos": {
+        "children": [
+            "rich-text#title-metodos",
+            "rich-text#metodos"
+        ],
+        "props": {
+            "blockclass": "textColumn",
+            "preventVerticalStretch": true,
+            "width": "75%"
+        }
+    },
+    "rich-text#title-metodos": {
+        "props": {
+            "text": "# Métodos de pago",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-1"
+        }
+    },
+    "rich-text#metodos": {
+        "props": {
+            "text": "\n1. **¿Cómo puedo pagar?**\nPodés pagar a través de la plataforma de pago MercadoPago con:\n + Tarjeta de crédito y débito.\n + A través de un cajero automático Banelco o RedLink.\n + Con saldo pre-cargado en tu cuenta de MercadoPago.\n2. **¿Cómo se hace para pagar con tarjeta de crédito?**\nAgregá los productos que te interesen a tu carrito. Antes de finalizar la compra vas a poder elegir el medio de pago que prefieras (por ejemplo, tarjeta de crédito).\n2. **¿Qué costo de financiación tienen las tarjetas?**\nPodrás averiguarlo antes de finalizar la compra, al momento de elegir la cantidad de cuotas. [Aquí podrás ver las promociones de cuotas de MercadoPago.](https://www.mercadopago.com.ar/cuotas)\n2. **¿Hay alguna promoción con tarjeta de crédito?**\n[Aquí podrás ver las promociones de cuotas de MercadoPago.](https://www.mercadopago.com.ar/cuotas).\n2. **¿Cuándo se me debita el importe por mi compra?**\nSi elegiste pagar con tarjeta de crédito, verás el importe descontado en el resumen correspondiente al próximo cierre de tarjeta. Si pagaste con el dinero de tu cuenta en MercadoPago, el débito será inmediato.",
+            "blockClass": "staticPage",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    }
+}

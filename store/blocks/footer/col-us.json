@@ -1,0 +1,160 @@
+{
+  "flex-layout.col#col-menuInfo": {
+    "children": [
+      "rich-text#titleMenuUsFooter",
+      "vtex.menu@2.x:menu#menu-usDesktop"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footerMenuMobile"
+    },
+    "children": [
+      "menu-item#ayuda-mobile"
+    ]
+  },
+  "menu-item#ayuda-mobile": {
+    "props": {
+      "id": "ayuda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "ayuda",
+        "text": "Ayuda"
+      },
+      "blockClass": "menuItemN1FooterMobile"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#ayuda"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#ayuda": {
+    "children": [
+      "vtex.menu@2.x:menu#ayuda-accordion"
+    ]
+  },
+  "vtex.menu@2.x:menu#ayuda-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#conocenos",
+      "menu-item#mision",
+      "menu-item#vision"
+    ]
+  },
+  "menu-item#conocenos": {
+    "title": "Menu Footer Conocenos",
+    "props": {
+      "id": "menu-item-conocenos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Conócenos",
+        "text": "Conócenos"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+  "menu-item#mision": {
+    "title": "Menu Footer Misión",
+    "props": {
+      "id": "menu-item-mision",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestra-mision",
+        "noFollow": false,
+        "tagTitle": "Nuestra Misión",
+        "text": "Nuestra Misión"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+  "menu-item#vision": {
+    "title": "Menu Footer vision",
+    "props": {
+      "id": "menu-item-vision",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestra-vision",
+        "noFollow": false,
+        "tagTitle": "Nuestra Visión",
+        "text": "Nuestra Visión"
+      },
+      "blockClass": "menuItemN2FooterMobile"
+    }
+  },
+
+  "rich-text#titleMenuUsFooter": {
+    "title":"Título Nosotros",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "NOSOTROS:",
+      "blockClass": "titleMenuUsFooter"
+    }
+  },
+  "vtex.menu@2.x:menu#menu-usDesktop": {
+    "title":"Menu Nosotros",
+    "props": {
+      "blockClass": "footerMenuInfoDesktop",
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "conocenos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "conocenos",
+            "text": "Conocenos"
+          }
+        },
+        {
+          "id": "mision",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/nuestra-mision",
+            "noFollow": false,
+            "tagTitle": "Nuestra Misión",
+            "text": "Nuestra Misión"
+          }
+        },
+        {
+          "id": "vision",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "href": "/nuestra-vision",
+            "noFollow": false,
+            "tagTitle": "Nuestra Visión",
+            "text": "Nuestra Visión"
+          }
+        }
+      ]
+    }
+  }
+}

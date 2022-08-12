@@ -1,0 +1,208 @@
+.paginationDotsContainer--mainSlider {
+  bottom: -35px;
+}
+
+.paginationDotsContainer--carouselInfoCardHome {
+  bottom: 0rem;
+}
+
+.paginationDotsContainer{
+}
+
+.paginationDot--carouselInfoCardHome {
+}
+
+.paginationDot--isActive {
+  background-color: #000000!important;
+  height: 10px !important;
+  width: 10px !important;
+}
+.paginationDot--mainSlider {
+  background-color: #dcddde;
+  height: 10px !important;
+  width: 10px !important;
+  margin-left: 18px;
+}
+
+.sliderArrows {
+  width: 44px;
+  height: 44px;
+  background-color: white !important;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+.sliderArrows--mainSlider {
+  width: 57px !important;
+  height: 57px !important;
+  background-color: #ffffff !important;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.sliderArrows--PreHeader {
+  width: 23px;
+  height: 23px;
+  background-color: #ffffff !important;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.sliderArrows--carouselInfoCardHome {
+  top: 150px;
+}
+
+.sliderRightArrow {
+  right: 40px;
+}
+
+.sliderLeftArrow {
+  left: 40px;
+}
+.sliderRightArrow--PreHeader{
+  right:12px!important
+}
+.sliderLeftArrow--PreHeader{
+  left:12px!important
+}
+.sliderLayoutContainer--PreHeader{
+ position:initial;
+}
+
+.sliderLeftArrow::after {
+  content: "";
+  background-image: url("assets/arrow-left.png");
+  width: 23px;
+  height: 38px;
+  margin-right: 5px;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+}
+
+.sliderRightArrow::after {
+  content: "";
+  background-image: url("assets/arrow-right.png");
+  width: 23px;
+  height: 38px;
+  margin-left: 5px;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+}
+.sliderRightArrow--PreHeader::after {
+  content: "";
+  background-image: url("assets/arrowRightS.png")!important;
+  width: 9px!important;
+  height: 14px !important;
+  margin-right: 4px! important;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+}
+.sliderLeftArrow--PreHeader::after {
+  content: "";
+  background-image: url("assets/arrowLeftS.png")!important;
+  width: 9px!important;
+  height: 14px !important;
+  margin-left: 3px! important;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+}
+
+
+.caretIcon {
+  height: 0.3125rem;
+  width: 0.3125rem;
+  color: black;
+  display: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .caretIcon {
+    height: 50px;
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .paginationDotsContainer--mainSlider {
+      bottom: -5%;
+    }
+  .sliderArrows--mainSlider {
+    width: 28px!important;
+    height: 28px!important;
+    background-color: #ffffff!important;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+.sliderArrows--shoesSlide {
+  top: 15%;
+}
+
+.sliderArrows--shoesSlide{
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff00!important;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.sliderLeftArrow::after {
+  content: "";
+  background-image: url("assets/arrow-left.png");
+  width: 12px;
+  height: 20px;
+  margin-left: 2px;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+}
+.sliderRightArrow::after {
+  content: "";
+  background-image: url("assets/arrow-right.png");
+  width: 12px;
+  height: 20px;
+  margin-right: 2px;
+  background-size: cover;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  left: auto;
+}
+.sliderRightArrow {
+  right: 12px;
+}
+
+.sliderLeftArrow {
+  left: 12px;
+}
+}

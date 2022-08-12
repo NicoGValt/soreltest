@@ -1,0 +1,365 @@
+{
+  "vtex.menu@2.x:menu#main-menu": {
+    "children": [
+      "menu-item#mujer",
+      "menu-item#colecciones",
+      "menu-item#giftcard",
+      "menu-item#sale"
+    ],
+    "props": {
+      "blockClass": "menuStyle"
+    }
+  },
+  "menu-item#mujer": {
+    "props": {
+      "blockClass":"menuStyle",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "mujer",
+        "text": "Mujer"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#mujer"
+    ]
+  },
+  "vtex.menu@2.x:submenu#mujer": {
+    "children": [
+      "flex-layout.row#menuMujer"
+    ]
+  },
+  "flex-layout.row#menuMujer": {
+    "children": [
+      "flex-layout.col#itemsCalzado",
+      "flex-layout.col#categoria1",
+      "flex-layout.col#categoria2",
+      "flex-layout.col#categoria3",
+      "flex-layout.col#imageMujer"
+    ],
+    "props": {
+      "blockClass": "subMenuTop",
+      "colGap":10,
+      "colSizing":"equal"
+    }
+  },
+  "flex-layout.col#itemsCalzado": {
+    "children": [
+      "vtex.menu@2.x:menu#submenumujer"
+    ],
+    "props": {
+      "blockClass": "submenu-position-left"
+    }
+  },
+  "vtex.menu@2.x:menu#submenumujer": {
+    "props": {
+      "categoryId": 101
+    }
+  },
+  "flex-layout.col#categoria1": {
+    "children": [
+      "rich-text#title",
+      "rich-text#txtA",
+      "rich-text#txtB",
+      "rich-text#txtC",
+      "rich-text#txtD",
+      "rich-text#verTodo"
+    ]
+  },
+  "rich-text#title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Categoria 2",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txtA": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtB": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtD": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#verTodo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Ver Todo"
+    }
+  },
+  "flex-layout.col#categoria2": {
+    "children": [
+      "rich-text#title2",
+      "rich-text#txtA",
+      "rich-text#txtB",
+      "rich-text#txtC",
+      "rich-text#txtD",
+      "rich-text#verTodo"
+    ]
+  },
+  "rich-text#title2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Categoria 3",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txtA": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtB": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtD": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#verTodo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Ver Todo"
+    }
+  },
+  "flex-layout.col#categoria3": {
+    "children": [
+      "rich-text#title3",
+      "rich-text#txtA",
+      "rich-text#txtB",
+      "rich-text#txtC",
+      "rich-text#txtD",
+      "rich-text#verTodo"
+    ]
+  },
+  "rich-text#title3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Categoria 4",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txtA": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtB": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtD": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#verTodo": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Ver Todo"
+    }
+  },
+  "flex-layout.col#imageMujer": {
+    "children": [
+      "image#imageMujer"
+    ]
+  },
+  "image#imageMujer": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png"
+    }
+  },
+  "menu-item#colecciones": {
+    "props": {
+      "blockClass":"menuStyle",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "colecciones",
+        "text": "Colecciones"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#colec"
+    ]
+  },
+  "vtex.menu@2.x:submenu#colec": {
+    "children": [
+      "flex-layout.row#menuColecciones"
+    ]
+  },
+  "flex-layout.row#menuColecciones": {
+    "children": [
+      "flex-layout.col#colecciones"
+    ]
+  },
+  "flex-layout.col#colecciones": {
+    "children": [
+      "rich-text#titleC",
+      "rich-text#txtAC",
+      "rich-text#txtBC",
+      "rich-text#txtCC",
+      "rich-text#txtDC",
+      "rich-text#verTodoC"
+    ]
+  },
+  "rich-text#titleC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Categoria 1",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#txtAC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtBC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtCC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#txtDC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Loren Ipsum"
+    }
+  },
+  "rich-text#verTodoC": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Ver Todo"
+    }
+  },
+  "menu-item#giftcard": {
+    "props": {
+      "blockClass":"menuStyle",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "giftcard",
+        "text": "Giftcards"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#giftcard"
+    ]
+  },
+  "vtex.menu@2.x:submenu#giftcard":{
+    "children":[
+      "flex-layout.row#menuGiftcard"
+    ]
+  },
+  "flex-layout.row#menuGiftcard":{
+    "children":[
+      
+    ]
+  },
+  "menu-item#sale": {
+    "props": {
+      "blockClass":"menuStyle",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sale"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sale":{
+    "children":[
+      "flex-layout.row#menuSale"
+    ]
+  },
+  "flex-layout.row#menuSale":{
+    "children":[
+      
+    ]
+  }
+}

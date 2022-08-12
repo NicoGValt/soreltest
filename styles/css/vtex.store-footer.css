@@ -1,0 +1,9 @@
+
+@media only screen and (max-width: 768px) {
+  .footerLayout {
+    margin-top: 0;
+  }
+}
+
+.container :global(.vtex-login-2-x-label) {
+}

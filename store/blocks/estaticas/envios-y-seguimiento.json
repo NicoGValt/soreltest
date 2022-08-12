@@ -1,0 +1,54 @@
+{
+    "store.custom#enviosSegumiento": {
+        "blocks": [
+            "flex-layout.row#enviosSegumiento"
+        ]
+    },
+
+    
+    "flex-layout.row#enviosSegumiento": {
+        "children": [
+            "flex-layout.col#menuInstitucional",
+            "flex-layout.col#text-enviosSegumiento"
+        ],
+        "props": {
+            "blockClass":"estaticPage",
+            "horizontalAlign": "left",
+            "colGap": 7,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 4,
+            "marginTop": 8
+        }
+    },
+    
+    "flex-layout.col#text-enviosSegumiento": {
+        "children": [
+            "rich-text#title-enviosSegumiento",
+            "rich-text#enviosSegumiento"
+        ],
+        "props": {
+            "blockclass": "textColumn",
+            "preventVerticalStretch": true,
+            "width": "75%"
+        }
+    },
+    "rich-text#title-enviosSegumiento": {
+        "props": {
+            "text": "# Envíos y seguimiento",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-1"
+        }
+    },
+    "rich-text#enviosSegumiento": {
+        "props": {
+            "text": "Los pedidos son entregados a través del correo Andreani en toda la Republica Argentina y a través de Fast Mail en GBA y CABA. El plazo de entrega de la compra varía entre las 48hs y 120hs hábiles desde el informe por mail que el envío esta despachado con numero de seguimiento.\n\nEnvíos a CABA y GBA: los pedidos serán despachados y se podrán consultar despues de las 24hs a traves de Fast Mail.\n\nEnvíos al Interior: Los pedidos son despachados y las primeras 24hs hábiles se pueden consultar a través de Fast Mail y luego de las 72hs hábiles se verá reflejado en la web de Andreani.\n\n*Aclaración: si hay un feriado se considera la compra como realizada el siguiente día hábil. Oportunamente se informará a los clientes las demoras ocasionadas.*\n\nPick Up: Si elegís retirar en un local de manera gratuita te enviaremos un mail avisándote que el pedido está disponible para el retiro. ¡Es muy importante que esperes el mail antes de acercarte al local!\n\n*Sucursales disponibles: Alcorta Shopping, Unicenter, Nordelta, Patio Bullrich, Palermo Soho.*\n\nCosto de envío: El valor del mismo será indicado durante tu compra antes que la finalices, el costo corre por cuenta del cliente, excepto que la empresa esté haciendo una acción promocional del mismo.\n\nSi no recibís tu pedido dentro de los plazos de entrega mencionados por favor comunicate con nosotros por Mail a eshop@lyracons.com.ar. ¡No te olvides de tener tu número de pedido!",
+            "blockClass": "staticPage",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    }
+}

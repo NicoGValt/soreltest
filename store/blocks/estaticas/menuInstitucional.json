@@ -1,0 +1,92 @@
+{
+    "flex-layout.col#menuInstitucional": {
+        "children": [
+            "vtex.menu@2.x:menu#menuInstitucional"
+        ],
+        "props": {
+            "width": "25%"
+        }
+    },
+    
+    "vtex.menu@2.x:menu#menuInstitucional": {
+    "props": {
+      "blockClass": "menuAyudaMobile",
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#conocenosf",
+      "menu-item#nmision",
+      "menu-item#nvision",
+      "menu-item#contactPage"
+    ]
+  },
+  "menu-item#conocenosf": {
+    "title":"Menu Footer Conocenos",
+    "props": {
+      "id": "menuItemconocenos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Conócenos",
+        "text": "Conócenos"
+      },
+      "blockClass": "menuItemInstucional"
+    }
+  },
+  "menu-item#nmision": {
+    "title":"Menu Footer Nuestra Misión",
+    "props": {
+      "id": "menuItemnmision",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestra-mision",
+        "noFollow": false,
+        "tagTitle": "Nuestra Misión",
+        "text": "Nuestra Misión"
+      },
+      "blockClass": "menuItemInstucional"
+    }
+  },
+  "menu-item#nvision": {
+    "title":"Menu Footer vision",
+    "props": {
+      "id": "menuItemnvision",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestra-vision",
+        "noFollow": false,
+        "tagTitle": "Nuestra Visión",
+        "text": "Nuestra Visión"
+      },
+      "blockClass": "menuItemInstucional"
+    }
+  },
+
+  "menu-item#contactPage": {
+    "title":"Menu Footer Contacto",
+    "props": {
+      "id": "menuItemcontactPage",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contacto",
+        "noFollow": false,
+        "tagTitle": "Contacto",
+        "text": "Contacto"
+      },
+      "blockClass": "menuItemInstucional"
+    }
+  }
+}

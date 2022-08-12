@@ -1,0 +1,54 @@
+{
+    "store.custom#contactPage": {
+        "blocks": [
+            "flex-layout.row#contactPage"
+        ]
+    },
+
+    
+    "flex-layout.row#contactPage": {
+        "children": [
+            "flex-layout.col#menuInstitucional",
+            "flex-layout.col#text-contactPage"
+        ],
+        "props": {
+            "blockClass":"estaticPage",
+            "horizontalAlign": "left",
+            "colGap": 7,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 4,
+            "marginTop": 8
+        }
+    },
+    
+    "flex-layout.col#text-contactPage": {
+        "children": [
+            "rich-text#title-contactPage",
+            "rich-text#contactPage"
+        ],
+        "props": {
+            "blockclass": "textColumn",
+            "preventVerticalStretch": true,
+            "width": "75%"
+        }
+    },
+    "rich-text#title-contactPage": {
+        "props": {
+            "text": "# Contáctenos",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-1"
+        }
+    },
+    "rich-text#contactPage": {
+        "props": {
+            "text": "**Direccion:** Thames 2215 Piso 2. Buenos Aires, Argentina.\n\n**Correo electrónico:** admin@lyracons.com",
+            "blockClass": "staticPage",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    }
+}

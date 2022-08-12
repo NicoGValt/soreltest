@@ -1,0 +1,29 @@
+.link,
+.termArrow,
+.term,
+.arrow {
+  color: #000000;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .link,
+  .termArrow,
+  .term,
+  .arrow {
+    padding: 1px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.homeLink {
+  display: none;
+}
+.arrow--1 {
+  display: none;
+}

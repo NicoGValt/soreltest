@@ -1,0 +1,45 @@
+.openIconContainer--hamburger {
+padding: 0 !important;
+margin: 0 !important;
+}
+.menuIcon--hamburger {
+  display: none;
+}
+.openIconContainer--hamburger::after {
+  content: "";
+  background-image: url("assets/menu-burger.png");
+  width: 23px;
+  height: 17px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: block;
+}
+
+.menuContainer :global(.vtex-menu-2-x-menuContainer) {
+  flex-direction: column;
+}
+
+.drawerContent :global(.vtex-menu-2-x-menuContainer) {
+  flex-direction: column;
+}
+
+.drawerContent :global(.vtex-menu-2-x-styledLinkContent) {
+  line-height: 30px;
+  color: #262626;
+  font-size: 18px;
+}
+
+
+.drawerTriggerContainer--subMenuMobile {
+  position: relative;
+}
+.drawerTriggerContainer--subMenuMobile::after {
+content: "";
+background-image: url("assets/chevron-right.png");
+background-size: cover;
+width: 8px;
+height: 13px;
+position: absolute;
+right:10px;
+top:5px
+}

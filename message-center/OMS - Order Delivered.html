@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+<!-- So that mobile webkit will display zoomed in -->
+<meta name="format-detection" content="telephone=no">
+<!-- disable auto telephone linking in iOS -->
+<title>{{_accountInfo.TradingName}}</title>
+<style>
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+  a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+  }
+  </style>
+    <style>
+  @media (max-width: 600px) {
+  
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  }
+  </style>
+    <style>
+  @media screen and (min-width: 30em) {
+  
+    .w-50-ns {
+      width: 50% !important;
+    }
+  
+    .pr4-ns {
+      padding-right: 2rem !important;
+    }
+  
+    .ph4-ns {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  
+    .mv1-ns {
+      margin-top: .25rem !important;
+      margin-bottom: .25rem !important;
+    }
+  
+    .mv4-ns {
+      margin-top: 2rem !important;
+      margin-bottom: 2rem !important;
+    }
+  }
+  </style>
+  </head>
+      <body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; width: 100%; height: 100%; margin: 0; padding: 0; background: #f1f1f1 !important; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="background: #FFFFFF;" align="center">
+                        <div style="box-sizing: border-box;margin-top: 1rem;padding-bottom: 1rem;margin-bottom: 2rem;border-bottom: 1px solid #e0e0e0;">
+                            <a href="https://www.lyracons.com/" style="box-sizing: border-box !important;display: block;width: 100%;">
+                                <img alt="" border="0" width="auto" src="https://lyracons.vtexassets.com/assets/vtex/assets-builder/lyracons.demomoda/0.0.0/logo.png" style="outline: none;text-decoration: none;border: none;width: auto;height: 29px;"></img>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!-- 100% wrapper (grey background) -->
+            <table width="100%" cellspacing="0" border="0" bgcolor="#fff">
+                <tbody>
+                    <tr>
+                        <td valign="top" bgcolor="#fff" align="center" class="no-padding-top-bottom-mobile" style="background-color: #fff;color:#000;">
+                            <!-- 600px container (white background) -->
+                            <table cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" class="container" style="max-width:600px;">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="#ffffff" align="left" class="container-padding" style="background-color: #ffffff; padding-left: 10px; padding-right: 3px; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 19px; font-family: 'Montserrat', Helvetica, sans-serif; color: #000;">
+                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" class="columns-container">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="force-col">
+                                                            <!-- ### BEGIN CONTENT ### -->
+                                                            <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="left" style="padding-bottom:0;margin-bottom:0;" class="col-3">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <h1 style="margin: 20px 0 0 0;  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 30px; line-height: 32px; box-sizing: border-box !important;">¡Tu pedido fue Entregado!</h1>
+                                                                        </td>
+                                                                    </tr>
+                                                                  
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            <span style="font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:16px;color:#000;display:inline-block;">Realizado el: {{formatDate creationDate}}</span><br /><br />
+                                                                            <span style="font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:18px;">Hola! <strong>{{clientProfileData.firstName}}</strong>, Gracias por elegir nuestra tienda. Tu producto ya se entregó.</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <hr style="margin-top: 20px;margin-bottom: 20px;"/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--/600px container -->
+            <!--/100% wrapper-->
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="background: #FFFFFF;" align="center">
+                        <div style="box-sizing: border-box;margin-bottom: 1rem;padding-top: 2rem;margin-top: 2rem;border-top: 1px solid #e0e0e0;">
+                            <table cellspacing="0" cellpadding="0" border="0" bgcolor="#fff" class="container" style="max-width:600px;width: 100%;">
+                                <tr style="box-sizing: border-box !important;">
+                                    <td class="ph4-ns" style="text-align:center; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px;width: 100%;">
+                                        <span style="display: inline-block;text-decoration:none;font-size: 15px;font-weight: bold;">Seguinos</span>
+                                    </td>
+                                </tr>
+                                <tr style="box-sizing: border-box !important;">
+                                    <td class="ph4-ns" style="text-align:center; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px;width: 100%;padding-top: 10px;padding-bottom: 20px;">
+                                        <a href="https://www.facebook.com/lyraconsParaguay/" target="_blank" style="margin-right: 10px;">
+                                            <img alt="" border="0" width="10" src="https://lyracons.vtexassets.com/assets/vtex/assets-builder/lyracons.demomoda/0.0.0/facebook.png"/>
+                                          </a>
+                                          <a href="https://www.instagram.com/lyraconspy/" target="_blank">
+                                            <img alt="" border="0" width="20" src="https://lyracons.vtexassets.com/assets/vtex/assets-builder/lyracons.demomoda/0.0.0/instagram.png"/>
+                                          </a>
+                                    </td>
+                                </tr>
+                                <tr style="box-sizing: border-box !important;">
+                                    <td class="ph4-ns" style="text-align:center; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px;width: 100%;">
+                                        <a href="https://www.lyracons.com/" target="_blank" style="display:block;color: #000; text-decoration:none;font-size: 14px;letter-spacing: 0.2em;">www.lyracons.com</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </body>
+</html>

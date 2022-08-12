@@ -1,0 +1,23 @@
+.progressText {
+  color: #262626;
+  top: -20px;
+  margin-left: 15px;
+  font-size: 12px;
+}
+.paragraph {
+  color: #ff15a9;
+  font-size: 12px;
+  font-weight: 400;
+}
+.minicartCheckoutButton {
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  margin-right: 20px;
+}
+.minicartCheckoutButton :global(.vtex-button) {
+  height: 55px;
+  border-radius: 4px;
+  border: none;
+}
+

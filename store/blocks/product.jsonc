@@ -1,0 +1,305 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "shelf.relatedProducts"
+    ]
+  },
+  "flex-layout.row#product-specifications": {
+    "props": {
+      "blockClass": "specificationsProd",
+      "marginBottom": 3,
+      "marginTop": 3,
+      "paddingLeft": 1,
+      "horizontalAlign": "left"
+    },
+    "children": ["flex-layout.col#product-specifications"]
+  },
+  "flex-layout.col#product-specifications": {
+    "props": {
+      "width": "60%",
+      "paddingLeft": 1
+    },
+    "children": ["product-specifications#product"]
+  },
+  "product-specifications#product": {
+    "props": {
+      "shoudCollapseOnTabChange": true,
+      "collapsible": "never"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "blockClass": "breadcrumbCustom",
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "blockClass":"rowAccordion",
+      "marginBottom": 0,
+      "marginTop": 0,
+      "paddingTop":0,
+      "paddingBottom":0,
+      "paddingLeft":0,
+      "paddingRight":0,
+
+      "colSizing":"equal"
+    },
+    "children": ["flex-layout.col#descriptionProduct","flex-layout.col#cuotasProduct","flex-layout.col#tiemposProduct"]
+  },
+
+  "flex-layout.col#descriptionProduct": {
+    "props": {
+      "blockClass":"colAccordionPV",
+      "paddingLeft":0,
+      "paddingRight":0
+    },
+    "children": ["menu-item#descriptionProduct"]
+  },
+  "flex-layout.col#cuotasProduct": {
+    "props": {
+      "blockClass":"colAccordionPV",
+      "paddingLeft":0,
+      "paddingRight":0
+    },
+    "children": ["menu-item#cuotasProduct"]
+  },
+  "flex-layout.col#tiemposProduct": {
+    "props": {
+      "blockClass":"colAccordionPV",
+      "paddingLeft":0,
+      "paddingRight":0
+    },
+    "children": ["menu-item#tiemposProduct"]
+  },
+
+
+
+
+
+
+  "flex-layout.row#product-main": {
+    "props": {
+      "blockClass":"mainPv",
+      "colGap": 6,
+      "rowGap": 6,
+      "marginTop": 4,
+      "marginBottom": 6,
+      "paddingTop": 1,
+      "paddingBottom": 6
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-specification-badges"
+    ]
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "props": {
+      "blockClass": "productImage"
+    },
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "maxHeight": 850,
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailMaxHeight": 250
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-price#product-details",
+      "sku-selector",
+      "flex-layout.row#quantityBuy",
+      "flex-layout.row#description",
+      "availability-subscriber"
+    ]
+  },
+ 
+  "flex-layout.row#quantityBuy": {
+    "children": [
+      "flex-layout.col#productQuantity",
+      "flex-layout.col#buy-button"
+    ],
+    "props": {
+      "blockClass": "conQuantityBuy",
+      "marginBottom": 3,
+      "marginTop": 3,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.col#productQuantity": {
+    "children": ["product-quantity"]
+  },
+  "product-quantity": {
+    "props": {
+      "blockClass": "boxQuantity"
+    }
+  },
+  "flex-layout.col#buy-button": {
+    "props": {
+      "blockClass": "buttonAddtoCart"
+    },
+    "children": ["add-to-cart-button"]
+  },
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 2
+    },
+    "children": ["vtex.store-components:product-name"]
+  },
+  "sku-selector": {
+    "props": {
+      "blockClass": "selectSkuPv",
+      "variationsSpacing": 1,
+      "showValueNameForImageVariation": true,
+      "initialSelection": "complete",
+      "imageHeight": 78
+    }
+  },
+  "product-price#product-details": {
+    "props": {
+      "blockClass": "pricePv",
+      "showInstallments": true,
+      "showSavings": false
+    }
+  },
+
+  "menu-item#descriptionProduct": {
+    "props": {
+      "id": "accordion_descriptionProduct",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Descripción",
+        "text": "Descripción"
+      },
+      "blockClass": ""
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#descriptionProduct"]
+  },
+  "vtex.menu@2.x:submenu.accordion#descriptionProduct": {
+    "children": ["product-description"]
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false
+    }
+  },
+
+  "menu-item#cuotasProduct": {
+    "props": {
+      "id": "accordion_cuotasProduct",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Cuotas y formas de pago",
+        "text": "Cuotas y formas de pago"
+      },
+      "blockClass": ""
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#cuotasProduct"]
+  },
+  "vtex.menu@2.x:submenu.accordion#cuotasProduct": {
+    "children": ["rich-text#cuotasProduct"]
+  },
+
+  "rich-text#cuotasProduct": {
+    "props": {
+      "text": "lyracons cuenta con varias opciones de pago, para que elijas la que más te conviene a vos.\nLos mejores bancos y hasta 12 cuotas sin interés.",
+      "blockClass": "txAccordionProduct",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "textColor": "c-on-emphasis"
+    }
+  },
+
+  "menu-item#tiemposProduct": {
+    "props": {
+      "id": "accordion_tiemposProduct",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Tiempos y costos de envío",
+        "text": "Tiempos y costos de envío"
+      },
+      "blockClass": ""
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#tiemposProduct"]
+  },
+  "vtex.menu@2.x:submenu.accordion#tiemposProduct": {
+    "children": ["rich-text#tiemposProduct"]
+  },
+
+  "rich-text#tiemposProduct": {
+    "props": {
+      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "blockClass": "txAccordionProduct",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "textColor": "c-on-emphasis"
+    }
+  },
+
+  
+
+  "shelf.relatedProducts": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "blockClass": "relatedInterest",
+      "recommendation": "view",
+      "isFullModeStyle": true,
+      "productList": {
+        "itemsPerPage": 4,
+        "gap":"ph3",
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": false,
+        "titleText": "Te puede interesar"
+      }
+    }
+  }
+}

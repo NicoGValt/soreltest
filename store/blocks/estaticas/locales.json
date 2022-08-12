@@ -1,0 +1,393 @@
+{
+    "store.custom#locales": {
+        "blocks": [
+            "flex-layout.row#locales",
+            "flex-layout.row#casaCentral",
+            "flex-layout.row#casaCentralImage",
+            "iframe#casaCentral",
+            "flex-layout.row#text-casaCentral",
+            "flex-layout.row#mariscal",
+            "flex-layout.row#mariscalImage",
+            "iframe#mariscal",
+            "flex-layout.row#text-mariscal",
+            "flex-layout.row#century",
+            "flex-layout.row#centuryImage",
+            "iframe#century",
+            "flex-layout.row#text-century",
+            "flex-layout.row#lorenzo",
+            "flex-layout.row#lorenzoImage",
+            "iframe#lorenzo",
+            "flex-layout.row#text-lorenzo"
+        ]
+    },
+    "flex-layout.row#locales": {
+        "children": [
+            "rich-text#title-locales"
+        ],
+        "props": {
+            "blockClass": "staticPageStores",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#title-locales": {
+        "title": "Menu Footer ",
+        "props": {
+            "text": "# Nuestras Sucursales",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-1"
+        }
+    },
+    "flex-layout.row#casaCentral": {
+        "children": [
+            "rich-text#title-casaCentral"
+        ],
+        "props": {
+            "blockClass": "staticPageStores",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#title-casaCentral": {
+        "title": "Titulo Casa Central",
+        "props": {
+            "text": "## Casa Central",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-warning",
+            "font": "t-heading-2"
+        }
+    },
+    "flex-layout.row#casaCentralImage": {
+        "children": [
+            "image#casaCentral"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresImage",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "image#casaCentral": {
+        "title": "Imagen CasaCentral",
+        "props": {
+            "blockClass": "localesImg",
+            "src": "assets/casaCentral.png"
+        }
+    },
+    "flex-layout.row#text-casaCentral": {
+        "children": [
+            "rich-text#datosContacto-casaCentral",
+            "rich-text#horarios-casaCentral",
+            "rich-text#datosGral-casaCentral"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresText",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#datosContacto-casaCentral": {
+        "props": {
+            "text": "### DATOS DE CONTACTOS\nDirección: Palma esq. 15 de Agosto\nTeléf: (021) 411 7000\nFax: 411 7000",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "rich-text#horarios-casaCentral": {
+        "props": {
+            "text": "### HORARIO DE ATENCIÓN\nLuneas a Sabados de 08:30 a 19:00 hs.\nDomingos y feriados de 11:00 a 18:00 hs",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "rich-text#datosGral-casaCentral": {
+        "props": {
+            "text": "### DATOS GENERALES\nPlanta Baja: Perfumería, Hogar, Electrodomésticos, Telas, Merceria, Visaciones y Cambios\nNivel 1: Hombres, Deportes, Outdoor, Zapateria Hombres, Maletas, Jugueteria\nNivel 2: Mujer, Zapateria Mujer, Niños, Bebes, Zapateria Niños\nNivel 3: Uniformes escolares\nNivel 6: Administración, Restaurante",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "iframe#casaCentral": {
+        "props": {
+            "src": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7215.400857326871!2d-57.63799300000001!3d-25.280661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf6c440b547b96e95!2slyracons%20-%20Centro!5e0!3m2!1ses!2sus!4v1603413305293!5m2!1ses!2sus",
+            "width": "81%",
+            "height": "500px",
+            "title": "Mapa Casa Central"
+        }
+    },
+    "flex-layout.row#mariscal": {
+        "children": [
+            "rich-text#title-mariscal"
+        ],
+        "props": {
+            "blockClass": "staticPageStores",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#title-mariscal": {
+        "title": "Titulo Shopping Mariscal",
+        "props": {
+            "text": "# Shopping Mariscal",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-warning",
+            "font": "t-heading-2"
+        }
+    },
+    "flex-layout.row#mariscalImage": {
+        "children": [
+            "image#mariscal"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresImage",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "image#mariscal": {
+        "title": "Imagen mariscal",
+        "props": {
+            "blockClass": "localesImg",
+            "src": "assets/shoppingMariscal.png"
+        }
+    },
+    "flex-layout.row#text-mariscal": {
+        "children": [
+            "rich-text#datosContacto-mariscal",
+            "rich-text#horarios-mariscal"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresText",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#datosContacto-mariscal": {
+        "props": {
+            "text": "### DATOS DE CONTACTOS\nDirección: Quesada 5.050 c/ Charles De Gaulle – Bloque B\nTeléf: (061) 579 404\nFax: 411 7000",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "rich-text#horarios-mariscal": {
+        "props": {
+            "text": "### HORARIO DE ATENCIÓN\nLuneas a Sabados de 09:00 a 21:00 hs.\nDomingos y feriados de 10:00 a 21:00 hs",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "iframe#mariscal": {
+        "props": {
+            "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.2794280633652!2d-57.58319261666867!3d-25.294814283771565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da8998edf7dc1%3A0xe53a97bd2be073bf!2slyracons%20-%20Shopping%20Mariscal!5e0!3m2!1ses!2sus!4v1603463908950!5m2!1ses!2sus",
+            "width": "81%",
+            "height": "500px",
+            "title": "Mapa Mariscal"
+        }
+    },
+    "flex-layout.row#century": {
+        "children": [
+            "rich-text#title-century"
+        ],
+        "props": {
+            "blockClass": "staticPageStores",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#title-century": {
+        "title": "Titulo Century",
+        "props": {
+            "text": "# Century Plaza Lambaré",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-warning",
+            "font": "t-heading-2"
+        }
+    },
+    "flex-layout.row#centuryImage": {
+        "children": [
+            "image#century"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresImage",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "image#century": {
+        "title": "Imagen century",
+        "props": {
+            "blockClass": "localesImg",
+            "src": "assets/centuryPlaza.png"
+        }
+    },
+    "flex-layout.row#text-century": {
+        "children": [
+            "rich-text#datosContacto-century",
+            "rich-text#horarios-century"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresText",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#datosContacto-century": {
+        "props": {
+            "text": "### DATOS DE CONTACTOS\nDirección: Avda. Cacique Lambaré, entre Mbaracayú y Testanova\nTeléf: 902-099",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "rich-text#horarios-century": {
+        "props": {
+            "text": "### HORARIO DE ATENCIÓN\nLuneas a Sabados de 09:00 a 21:00 hs.\nDomingos y feriados de 11:00 a 21:00 hs",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "iframe#century": {
+        "props": {
+            "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.83559463224!2d-57.615924349208626!3d-25.343297283749116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9b110df6369%3A0x24e78fe9852862e5!2sCentury%20Plaza%20Lambare!5e0!3m2!1ses!2sus!4v1603463987324!5m2!1ses!2sus",
+            "width": "81%",
+            "height": "500px",
+            "title": "Mapa Century"
+        }
+    },
+    "flex-layout.row#lorenzo": {
+        "children": [
+            "rich-text#title-lorenzo"
+        ],
+        "props": {
+            "blockClass": "staticPageStores",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": false,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#title-lorenzo": {
+        "title": "Titulo San Lorenzo",
+        "props": {
+            "text": "# San Lorenzo",
+            "blockClass": "title",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "textColor": "c-on-warning",
+            "font": "t-heading-2"
+        }
+    },
+    "flex-layout.row#lorenzoImage": {
+        "children": [
+            "image#lorenzo"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresImage",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "image#lorenzo": {
+        "title": "Imagen lorenzo",
+        "props": {
+            "blockClass": "localesImg",
+            "src": "assets/sanLorenzo.png"
+        }
+    },
+    "flex-layout.row#text-lorenzo": {
+        "children": [
+            "rich-text#datosContacto-lorenzo",
+            "rich-text#horarios-lorenzo"
+        ],
+        "props": {
+            "blockClass": "staticPageStoresText",
+            "horizontalAlign": "left",
+            "colGap": 0,
+            "preserveLayoutOnMobile": true,
+            "marginBottom": 0,
+            "marginTop": 0
+        }
+    },
+    "rich-text#datosContacto-lorenzo": {
+        "props": {
+            "text": "### DATOS DE CONTACTOS\nDirección: Avda. Rodriguez de Francia 535 c/ Julia Miranda Cueto. - San Lorenzo\nTeléf: 586 060/61",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "rich-text#horarios-lorenzo": {
+        "props": {
+            "text": "### HORARIO DE ATENCIÓN\nLuneas a Sabados de 09:00 a 19:30 hs.\nDomingos y feriados de 11:00 a 18:30 hs",
+            "blockClass": "staticPageStores",
+            "textAlignment": "left",
+            "textPosition": "left",
+            "textColor": "c-on-emphasis"
+        }
+    },
+    "iframe#lorenzo": {
+        "props": {
+            "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.893575780964!2d-57.50893904920874!3d-25.341351983749888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDIwJzI4LjkiUyA1N8KwMzAnMjQuMyJX!5e0!3m2!1ses!2sus!4v1603464201729!5m2!1ses!2sus",
+            "width": "81%",
+            "height": "500px",
+            "title": "Mapa San Lorenzo"
+        }
+    }
+}

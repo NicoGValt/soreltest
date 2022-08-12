@@ -1,0 +1,12 @@
+.linkRemove {
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  float: right;
+  margin: 20px;
+  margin-right: 43px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+}
